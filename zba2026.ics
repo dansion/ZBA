@@ -1,0 +1,2330 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ZBA2026//Zhejiang City Basketball League 2026//CN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:浙BA 2026省级争霸赛小组赛
+X-WR-TIMEZONE:Asia/Shanghai
+X-WR-CALDESC:2026浙江省城市篮球联赛省级争霸赛小组赛完整
+ 赛程（168场）
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+X-LIC-LOCATION:Asia/Shanghai
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:zba2026-g001@zba.local
+SUMMARY:杭州队 VS 台州队（A组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260904T193000
+DTEND;TZID=Asia/Shanghai:20260904T213000
+LOCATION:杭州奥体AT中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：1　轮次：第1轮\n组别：A组\n对阵：杭州队 VS 台州队
+ \n时间：2026-09-04（周五）19:30\n场馆：杭州奥体AT中心体
+ 育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g002@zba.local
+SUMMARY:丽水队 VS 永康队（B组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260905T193000
+DTEND;TZID=Asia/Shanghai:20260905T213000
+LOCATION:丽水市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：2　轮次：第1轮\n组别：B组\n对阵：丽水队 VS 永康队
+ \n时间：2026-09-05（周六）19:30\n场馆：丽水市体育中心体
+ 育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g003@zba.local
+SUMMARY:临安队 VS 舟山队（B组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260906T193000
+DTEND;TZID=Asia/Shanghai:20260906T213000
+LOCATION:临安区体育文化会展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：3　轮次：第1轮\n组别：B组\n对阵：临安队 VS 舟山队
+ \n时间：2026-09-06（周日）19:30\n场馆：临安区体育文化会
+ 展中心体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g004@zba.local
+SUMMARY:临海队 VS 绍兴队（B组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260906T193000
+DTEND;TZID=Asia/Shanghai:20260906T213000
+LOCATION:临海市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：4　轮次：第1轮\n组别：B组\n对阵：临海队 VS 绍兴队
+ \n时间：2026-09-06（周日）19:30\n场馆：临海市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g005@zba.local
+SUMMARY:海宁队 VS 金华队（C组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260908T193000
+DTEND;TZID=Asia/Shanghai:20260908T213000
+LOCATION:海宁市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：5　轮次：第1轮\n组别：C组\n对阵：海宁队 VS 金华队
+ \n时间：2026-09-08（周二）19:30\n场馆：海宁市体育中心体
+ 育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g006@zba.local
+SUMMARY:宁海队 VS 衢州队（C组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260909T193000
+DTEND;TZID=Asia/Shanghai:20260909T213000
+LOCATION:宁海县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：6　轮次：第1轮\n组别：C组\n对阵：宁海队 VS 衢州队
+ \n时间：2026-09-09（周三）19:30\n场馆：宁海县体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g007@zba.local
+SUMMARY:江山队 VS 余姚队（A组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260910T193000
+DTEND;TZID=Asia/Shanghai:20260910T213000
+LOCATION:江山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：7　轮次：第1轮\n组别：A组\n对阵：江山队 VS 余姚队
+ \n时间：2026-09-10（周四）19:30\n场馆：江山市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g008@zba.local
+SUMMARY:温州队 VS 诸暨队（C组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260911T193000
+DTEND;TZID=Asia/Shanghai:20260911T213000
+LOCATION:温州体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：8　轮次：第1轮\n组别：C组\n对阵：温州队 VS 诸暨队
+ \n时间：2026-09-11（周五）19:30\n场馆：温州体育中心体育
+ 馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g009@zba.local
+SUMMARY:普陀队 VS 桐乡队（A组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260912T193000
+DTEND;TZID=Asia/Shanghai:20260912T213000
+LOCATION:舟山普陀体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：9　轮次：第1轮\n组别：A组\n对阵：普陀队 VS 桐乡队
+ \n时间：2026-09-12（周六）19:30\n场馆：舟山普陀体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g010@zba.local
+SUMMARY:义乌队 VS 湖州队（D组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260912T193000
+DTEND;TZID=Asia/Shanghai:20260912T213000
+LOCATION:义乌梅湖体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：10　轮次：第1轮\n组别：D组\n对阵：义乌队 VS 湖州
+ 队\n时间：2026-09-12（周六）19:30\n场馆：义乌梅湖体育中
+ 心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g011@zba.local
+SUMMARY:嘉兴队 VS 云和队（D组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260912T193000
+DTEND;TZID=Asia/Shanghai:20260912T213000
+LOCATION:嘉兴市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：11　轮次：第1轮\n组别：D组\n对阵：嘉兴队 VS 云和
+ 队\n时间：2026-09-12（周六）19:30\n场馆：嘉兴市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g012@zba.local
+SUMMARY:富阳队 VS 苍南队（D组第1轮）
+DTSTART;TZID=Asia/Shanghai:20260913T193000
+DTEND;TZID=Asia/Shanghai:20260913T213000
+LOCATION:富阳体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：12　轮次：第1轮\n组别：D组\n对阵：富阳队 VS 苍南
+ 队\n时间：2026-09-13（周日）19:30\n场馆：富阳体育中心体
+ 育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g013@zba.local
+SUMMARY:安吉队 VS 江山队（A组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260915T193000
+DTEND;TZID=Asia/Shanghai:20260915T213000
+LOCATION:安吉县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：13　轮次：第2轮\n组别：A组\n对阵：安吉队 VS 江山
+ 队\n时间：2026-09-15（周二）19:30\n场馆：安吉县体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g014@zba.local
+SUMMARY:绍兴队 VS 丽水队（B组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260915T193000
+DTEND;TZID=Asia/Shanghai:20260915T213000
+LOCATION:绍兴市奥体中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：14　轮次：第2轮\n组别：B组\n对阵：绍兴队 VS 丽水
+ 队\n时间：2026-09-15（周二）19:30\n场馆：绍兴市奥体中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g015@zba.local
+SUMMARY:桐乡队 VS 杭州队（A组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260916T193000
+DTEND;TZID=Asia/Shanghai:20260916T213000
+LOCATION:桐乡市全民健身中心
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：15　轮次：第2轮\n组别：A组\n对阵：桐乡队 VS 杭州
+ 队\n时间：2026-09-16（周三）19:30\n场馆：桐乡市全民健身
+ 中心
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g016@zba.local
+SUMMARY:余姚队 VS 普陀队（A组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260916T193000
+DTEND;TZID=Asia/Shanghai:20260916T213000
+LOCATION:余姚市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：16　轮次：第2轮\n组别：A组\n对阵：余姚队 VS 普陀
+ 队\n时间：2026-09-16（周三）19:30\n场馆：余姚市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g017@zba.local
+SUMMARY:舟山队 VS 临海队（B组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260917T193000
+DTEND;TZID=Asia/Shanghai:20260917T213000
+LOCATION:舟山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：17　轮次：第2轮\n组别：B组\n对阵：舟山队 VS 临海
+ 队\n时间：2026-09-17（周四）19:30\n场馆：舟山市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g018@zba.local
+SUMMARY:瑞安队 VS 临安队（B组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260917T193000
+DTEND;TZID=Asia/Shanghai:20260917T213000
+LOCATION:瑞安市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：18　轮次：第2轮\n组别：B组\n对阵：瑞安队 VS 临安
+ 队\n时间：2026-09-17（周四）19:30\n场馆：瑞安市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g019@zba.local
+SUMMARY:金华队 VS 温州队（C组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260918T193000
+DTEND;TZID=Asia/Shanghai:20260918T213000
+LOCATION:金华市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：19　轮次：第2轮\n组别：C组\n对阵：金华队 VS 温州
+ 队\n时间：2026-09-18（周五）19:30\n场馆：金华市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g020@zba.local
+SUMMARY:衢州队 VS 海宁队（C组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260918T193000
+DTEND;TZID=Asia/Shanghai:20260918T213000
+LOCATION:衢州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：20　轮次：第2轮\n组别：C组\n对阵：衢州队 VS 海宁
+ 队\n时间：2026-09-18（周五）19:30\n场馆：衢州市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g021@zba.local
+SUMMARY:玉环队 VS 宁海队（C组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260919T193000
+DTEND;TZID=Asia/Shanghai:20260919T213000
+LOCATION:玉环市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：21　轮次：第2轮\n组别：C组\n对阵：玉环队 VS 宁海
+ 队\n时间：2026-09-19（周六）19:30\n场馆：玉环市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g022@zba.local
+SUMMARY:富阳队 VS 嘉兴队（D组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260919T193000
+DTEND;TZID=Asia/Shanghai:20260919T213000
+LOCATION:富阳体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：22　轮次：第2轮\n组别：D组\n对阵：富阳队 VS 嘉兴
+ 队\n时间：2026-09-19（周六）19:30\n场馆：富阳体育中心体
+ 育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g023@zba.local
+SUMMARY:湖州队 VS 云和队（D组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260920T193000
+DTEND;TZID=Asia/Shanghai:20260920T213000
+LOCATION:湖州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：23　轮次：第2轮\n组别：D组\n对阵：湖州队 VS 云和
+ 队\n时间：2026-09-20（周日）19:30\n场馆：湖州市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g024@zba.local
+SUMMARY:宁波队 VS 义乌队（D组第2轮）
+DTSTART;TZID=Asia/Shanghai:20260920T193000
+DTEND;TZID=Asia/Shanghai:20260920T213000
+LOCATION:宁波市体育发展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：24　轮次：第2轮\n组别：D组\n对阵：宁波队 VS 义乌
+ 队\n时间：2026-09-20（周日）19:30\n场馆：宁波市体育发展
+ 中心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g025@zba.local
+SUMMARY:临海队 VS 瑞安队（B组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260922T193000
+DTEND;TZID=Asia/Shanghai:20260922T213000
+LOCATION:临海市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：25　轮次：第3轮\n组别：B组\n对阵：临海队 VS 瑞安
+ 队\n时间：2026-09-22（周二）19:30\n场馆：临海市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g026@zba.local
+SUMMARY:丽水队 VS 舟山队（B组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260922T193000
+DTEND;TZID=Asia/Shanghai:20260922T213000
+LOCATION:丽水市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：26　轮次：第3轮\n组别：B组\n对阵：丽水队 VS 舟山
+ 队\n时间：2026-09-22（周二）19:30\n场馆：丽水市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g027@zba.local
+SUMMARY:永康队 VS 绍兴队（B组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260923T193000
+DTEND;TZID=Asia/Shanghai:20260923T213000
+LOCATION:永康市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：27　轮次：第3轮\n组别：B组\n对阵：永康队 VS 绍兴
+ 队\n时间：2026-09-23（周三）19:30\n场馆：永康市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g028@zba.local
+SUMMARY:苍南队 VS 嘉兴队（D组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260923T193000
+DTEND;TZID=Asia/Shanghai:20260923T213000
+LOCATION:苍南县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：28　轮次：第3轮\n组别：D组\n对阵：苍南队 VS 嘉兴
+ 队\n时间：2026-09-23（周三）19:30\n场馆：苍南县体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g029@zba.local
+SUMMARY:富阳队 VS 湖州队（D组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260924T193000
+DTEND;TZID=Asia/Shanghai:20260924T213000
+LOCATION:富阳体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：29　轮次：第3轮\n组别：D组\n对阵：富阳队 VS 湖州
+ 队\n时间：2026-09-24（周四）19:30\n场馆：富阳体育中心体
+ 育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g030@zba.local
+SUMMARY:宁波队 VS 云和队（D组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260924T193000
+DTEND;TZID=Asia/Shanghai:20260924T213000
+LOCATION:宁波市体育发展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：30　轮次：第3轮\n组别：D组\n对阵：宁波队 VS 云和
+ 队\n时间：2026-09-24（周四）19:30\n场馆：宁波市体育发展
+ 中心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g031@zba.local
+SUMMARY:普陀队 VS 安吉队（A组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260925T193000
+DTEND;TZID=Asia/Shanghai:20260925T213000
+LOCATION:舟山普陀体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：31　轮次：第3轮\n组别：A组\n对阵：普陀队 VS 安吉
+ 队\n时间：2026-09-25（周五）19:30\n场馆：舟山普陀体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g032@zba.local
+SUMMARY:杭州队 VS 余姚队（A组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260925T193000
+DTEND;TZID=Asia/Shanghai:20260925T213000
+LOCATION:杭州奥体AT中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：32　轮次：第3轮\n组别：A组\n对阵：杭州队 VS 余姚
+ 队\n时间：2026-09-25（周五）19:30\n场馆：杭州奥体AT中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g033@zba.local
+SUMMARY:台州队 VS 桐乡队（A组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260926T193000
+DTEND;TZID=Asia/Shanghai:20260926T213000
+LOCATION:台州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：33　轮次：第3轮\n组别：A组\n对阵：台州队 VS 桐乡
+ 队\n时间：2026-09-26（周六）19:30\n场馆：台州市体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g034@zba.local
+SUMMARY:海宁队 VS 玉环队（C组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260926T193000
+DTEND;TZID=Asia/Shanghai:20260926T213000
+LOCATION:海宁市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：34　轮次：第3轮\n组别：C组\n对阵：海宁队 VS 玉环
+ 队\n时间：2026-09-26（周六）19:30\n场馆：海宁市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g035@zba.local
+SUMMARY:衢州队 VS 温州队（C组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260927T193000
+DTEND;TZID=Asia/Shanghai:20260927T213000
+LOCATION:衢州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：35　轮次：第3轮\n组别：C组\n对阵：衢州队 VS 温州
+ 队\n时间：2026-09-27（周日）19:30\n场馆：衢州市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g036@zba.local
+SUMMARY:诸暨队 VS 金华队（C组第3轮）
+DTSTART;TZID=Asia/Shanghai:20260927T193000
+DTEND;TZID=Asia/Shanghai:20260927T213000
+LOCATION:诸暨市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：36　轮次：第3轮\n组别：C组\n对阵：诸暨队 VS 金华
+ 队\n时间：2026-09-27（周日）19:30\n场馆：诸暨市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g037@zba.local
+SUMMARY:余姚队 VS 台州队（A组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261001T193000
+DTEND;TZID=Asia/Shanghai:20261001T213000
+LOCATION:余姚市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：37　轮次：第4轮\n组别：A组\n对阵：余姚队 VS 台州
+ 队\n时间：2026-10-01（周四）19:30\n场馆：余姚市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g038@zba.local
+SUMMARY:安吉队 VS 杭州队（A组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261001T193000
+DTEND;TZID=Asia/Shanghai:20261001T213000
+LOCATION:安吉县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：38　轮次：第4轮\n组别：A组\n对阵：安吉队 VS 杭州
+ 队\n时间：2026-10-01（周四）19:30\n场馆：安吉县体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g039@zba.local
+SUMMARY:江山队 VS 普陀队（A组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261001T193000
+DTEND;TZID=Asia/Shanghai:20261001T213000
+LOCATION:江山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：39　轮次：第4轮\n组别：A组\n对阵：江山队 VS 普陀
+ 队\n时间：2026-10-01（周四）19:30\n场馆：江山市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g040@zba.local
+SUMMARY:舟山队 VS 永康队（B组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261001T193000
+DTEND;TZID=Asia/Shanghai:20261001T213000
+LOCATION:舟山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：40　轮次：第4轮\n组别：B组\n对阵：舟山队 VS 永康
+ 队\n时间：2026-10-01（周四）19:30\n场馆：舟山市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g041@zba.local
+SUMMARY:瑞安队 VS 丽水队（B组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261002T193000
+DTEND;TZID=Asia/Shanghai:20261002T213000
+LOCATION:瑞安市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：41　轮次：第4轮\n组别：B组\n对阵：瑞安队 VS 丽水
+ 队\n时间：2026-10-02（周五）19:30\n场馆：瑞安市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g042@zba.local
+SUMMARY:临安队 VS 临海队（B组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261002T193000
+DTEND;TZID=Asia/Shanghai:20261002T213000
+LOCATION:临安区体育文化会展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：42　轮次：第4轮\n组别：B组\n对阵：临安队 VS 临海
+ 队\n时间：2026-10-02（周五）19:30\n场馆：临安区体育文化
+ 会展中心体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g043@zba.local
+SUMMARY:衢州队 VS 诸暨队（C组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261002T193000
+DTEND;TZID=Asia/Shanghai:20261002T213000
+LOCATION:衢州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：43　轮次：第4轮\n组别：C组\n对阵：衢州队 VS 诸暨
+ 队\n时间：2026-10-02（周五）19:30\n场馆：衢州市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g044@zba.local
+SUMMARY:玉环队 VS 温州队（C组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261002T193000
+DTEND;TZID=Asia/Shanghai:20261002T213000
+LOCATION:玉环市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：44　轮次：第4轮\n组别：C组\n对阵：玉环队 VS 温州
+ 队\n时间：2026-10-02（周五）19:30\n场馆：玉环市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g045@zba.local
+SUMMARY:海宁队 VS 宁海队（C组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261003T193000
+DTEND;TZID=Asia/Shanghai:20261003T213000
+LOCATION:海宁市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：45　轮次：第4轮\n组别：C组\n对阵：海宁队 VS 宁海
+ 队\n时间：2026-10-03（周六）19:30\n场馆：海宁市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g046@zba.local
+SUMMARY:湖州队 VS 苍南队（D组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261003T193000
+DTEND;TZID=Asia/Shanghai:20261003T213000
+LOCATION:湖州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：46　轮次：第4轮\n组别：D组\n对阵：湖州队 VS 苍南
+ 队\n时间：2026-10-03（周六）19:30\n场馆：湖州市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g047@zba.local
+SUMMARY:宁波队 VS 富阳队（D组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261003T193000
+DTEND;TZID=Asia/Shanghai:20261003T213000
+LOCATION:宁波市体育发展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：47　轮次：第4轮\n组别：D组\n对阵：宁波队 VS 富阳
+ 队\n时间：2026-10-03（周六）19:30\n场馆：宁波市体育发展
+ 中心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g048@zba.local
+SUMMARY:义乌队 VS 云和队（D组第4轮）
+DTSTART;TZID=Asia/Shanghai:20261003T193000
+DTEND;TZID=Asia/Shanghai:20261003T213000
+LOCATION:义乌梅湖体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：48　轮次：第4轮\n组别：D组\n对阵：义乌队 VS 云和
+ 队\n时间：2026-10-03（周六）19:30\n场馆：义乌梅湖体育中
+ 心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g049@zba.local
+SUMMARY:杭州队 VS 江山队（A组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261004T193000
+DTEND;TZID=Asia/Shanghai:20261004T213000
+LOCATION:杭州奥体AT中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：49　轮次：第5轮\n组别：A组\n对阵：杭州队 VS 江山
+ 队\n时间：2026-10-04（周日）19:30\n场馆：杭州奥体AT中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g050@zba.local
+SUMMARY:台州队 VS 安吉队（A组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261004T193000
+DTEND;TZID=Asia/Shanghai:20261004T213000
+LOCATION:台州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：50　轮次：第5轮\n组别：A组\n对阵：台州队 VS 安吉
+ 队\n时间：2026-10-04（周日）19:30\n场馆：台州市体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g051@zba.local
+SUMMARY:桐乡队 VS 余姚队（A组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261004T193000
+DTEND;TZID=Asia/Shanghai:20261004T213000
+LOCATION:桐乡市全民健身中心
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：51　轮次：第5轮\n组别：A组\n对阵：桐乡队 VS 余姚
+ 队\n时间：2026-10-04（周日）19:30\n场馆：桐乡市全民健身
+ 中心
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g052@zba.local
+SUMMARY:丽水队 VS 临安队（B组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261005T193000
+DTEND;TZID=Asia/Shanghai:20261005T213000
+LOCATION:丽水市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：52　轮次：第5轮\n组别：B组\n对阵：丽水队 VS 临安
+ 队\n时间：2026-10-05（周一）19:30\n场馆：丽水市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g053@zba.local
+SUMMARY:永康队 VS 瑞安队（B组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261005T193000
+DTEND;TZID=Asia/Shanghai:20261005T213000
+LOCATION:永康市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：53　轮次：第5轮\n组别：B组\n对阵：永康队 VS 瑞安
+ 队\n时间：2026-10-05（周一）19:30\n场馆：永康市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g054@zba.local
+SUMMARY:绍兴队 VS 舟山队（B组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261005T193000
+DTEND;TZID=Asia/Shanghai:20261005T213000
+LOCATION:绍兴市奥体中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：54　轮次：第5轮\n组别：B组\n对阵：绍兴队 VS 舟山
+ 队\n时间：2026-10-05（周一）19:30\n场馆：绍兴市奥体中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g055@zba.local
+SUMMARY:温州队 VS 宁海队（C组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261006T193000
+DTEND;TZID=Asia/Shanghai:20261006T213000
+LOCATION:温州体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：55　轮次：第5轮\n组别：C组\n对阵：温州队 VS 宁海
+ 队\n时间：2026-10-06（周二）19:30\n场馆：温州体育中心体
+ 育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g056@zba.local
+SUMMARY:诸暨队 VS 玉环队（C组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261006T193000
+DTEND;TZID=Asia/Shanghai:20261006T213000
+LOCATION:诸暨市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：56　轮次：第5轮\n组别：C组\n对阵：诸暨队 VS 玉环
+ 队\n时间：2026-10-06（周二）19:30\n场馆：诸暨市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g057@zba.local
+SUMMARY:金华队 VS 衢州队（C组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261006T193000
+DTEND;TZID=Asia/Shanghai:20261006T213000
+LOCATION:金华市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：57　轮次：第5轮\n组别：C组\n对阵：金华队 VS 衢州
+ 队\n时间：2026-10-06（周二）19:30\n场馆：金华市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g058@zba.local
+SUMMARY:富阳队 VS 义乌队（D组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261007T193000
+DTEND;TZID=Asia/Shanghai:20261007T213000
+LOCATION:富阳体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：58　轮次：第5轮\n组别：D组\n对阵：富阳队 VS 义乌
+ 队\n时间：2026-10-07（周三）19:30\n场馆：富阳体育中心体
+ 育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g059@zba.local
+SUMMARY:苍南队 VS 宁波队（D组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261007T193000
+DTEND;TZID=Asia/Shanghai:20261007T213000
+LOCATION:苍南县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：59　轮次：第5轮\n组别：D组\n对阵：苍南队 VS 宁波
+ 队\n时间：2026-10-07（周三）19:30\n场馆：苍南县体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g060@zba.local
+SUMMARY:嘉兴队 VS 湖州队（D组第5轮）
+DTSTART;TZID=Asia/Shanghai:20261007T193000
+DTEND;TZID=Asia/Shanghai:20261007T213000
+LOCATION:嘉兴市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：60　轮次：第5轮\n组别：D组\n对阵：嘉兴队 VS 湖州
+ 队\n时间：2026-10-07（周三）19:30\n场馆：嘉兴市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g061@zba.local
+SUMMARY:安吉队 VS 桐乡队（A组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261010T193000
+DTEND;TZID=Asia/Shanghai:20261010T213000
+LOCATION:安吉县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：61　轮次：第6轮\n组别：A组\n对阵：安吉队 VS 桐乡
+ 队\n时间：2026-10-10（周六）19:30\n场馆：安吉县体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g062@zba.local
+SUMMARY:江山队 VS 台州队（A组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261010T193000
+DTEND;TZID=Asia/Shanghai:20261010T213000
+LOCATION:江山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：62　轮次：第6轮\n组别：A组\n对阵：江山队 VS 台州
+ 队\n时间：2026-10-10（周六）19:30\n场馆：江山市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g063@zba.local
+SUMMARY:普陀队 VS 杭州队（A组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261011T193000
+DTEND;TZID=Asia/Shanghai:20261011T213000
+LOCATION:舟山普陀体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：63　轮次：第6轮\n组别：A组\n对阵：普陀队 VS 杭州
+ 队\n时间：2026-10-11（周日）19:30\n场馆：舟山普陀体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g064@zba.local
+SUMMARY:玉环队 VS 金华队（C组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261011T193000
+DTEND;TZID=Asia/Shanghai:20261011T213000
+LOCATION:玉环市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：64　轮次：第6轮\n组别：C组\n对阵：玉环队 VS 金华
+ 队\n时间：2026-10-11（周日）19:30\n场馆：玉环市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g065@zba.local
+SUMMARY:宁海队 VS 诸暨队（C组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261013T193000
+DTEND;TZID=Asia/Shanghai:20261013T213000
+LOCATION:宁海县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：65　轮次：第6轮\n组别：C组\n对阵：宁海队 VS 诸暨
+ 队\n时间：2026-10-13（周二）19:30\n场馆：宁海县体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g066@zba.local
+SUMMARY:海宁队 VS 温州队（C组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261014T193000
+DTEND;TZID=Asia/Shanghai:20261014T213000
+LOCATION:海宁市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：66　轮次：第6轮\n组别：C组\n对阵：海宁队 VS 温州
+ 队\n时间：2026-10-14（周三）19:30\n场馆：海宁市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g067@zba.local
+SUMMARY:瑞安队 VS 绍兴队（B组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261015T193000
+DTEND;TZID=Asia/Shanghai:20261015T213000
+LOCATION:瑞安市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：67　轮次：第6轮\n组别：B组\n对阵：瑞安队 VS 绍兴
+ 队\n时间：2026-10-15（周四）19:30\n场馆：瑞安市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g068@zba.local
+SUMMARY:临安队 VS 永康队（B组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261016T193000
+DTEND;TZID=Asia/Shanghai:20261016T213000
+LOCATION:临安区体育文化会展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：68　轮次：第6轮\n组别：B组\n对阵：临安队 VS 永康
+ 队\n时间：2026-10-16（周五）19:30\n场馆：临安区体育文化
+ 会展中心体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g069@zba.local
+SUMMARY:临海队 VS 丽水队（B组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261017T193000
+DTEND;TZID=Asia/Shanghai:20261017T213000
+LOCATION:临海市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：69　轮次：第6轮\n组别：B组\n对阵：临海队 VS 丽水
+ 队\n时间：2026-10-17（周六）19:30\n场馆：临海市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g070@zba.local
+SUMMARY:宁波队 VS 嘉兴队（D组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261017T193000
+DTEND;TZID=Asia/Shanghai:20261017T213000
+LOCATION:宁波市体育发展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：70　轮次：第6轮\n组别：D组\n对阵：宁波队 VS 嘉兴
+ 队\n时间：2026-10-17（周六）19:30\n场馆：宁波市体育发展
+ 中心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g071@zba.local
+SUMMARY:义乌队 VS 苍南队（D组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261018T193000
+DTEND;TZID=Asia/Shanghai:20261018T213000
+LOCATION:义乌梅湖体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：71　轮次：第6轮\n组别：D组\n对阵：义乌队 VS 苍南
+ 队\n时间：2026-10-18（周日）19:30\n场馆：义乌梅湖体育中
+ 心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g072@zba.local
+SUMMARY:云和队 VS 富阳队（D组第6轮）
+DTSTART;TZID=Asia/Shanghai:20261018T193000
+DTEND;TZID=Asia/Shanghai:20261018T213000
+LOCATION:云和县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：72　轮次：第6轮\n组别：D组\n对阵：云和队 VS 富阳
+ 队\n时间：2026-10-18（周日）19:30\n场馆：云和县体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g073@zba.local
+SUMMARY:台州队 VS 普陀队（A组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261020T193000
+DTEND;TZID=Asia/Shanghai:20261020T213000
+LOCATION:台州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：73　轮次：第7轮\n组别：A组\n对阵：台州队 VS 普陀
+ 队\n时间：2026-10-20（周二）19:30\n场馆：台州市体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g074@zba.local
+SUMMARY:江山队 VS 桐乡队（A组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261020T193000
+DTEND;TZID=Asia/Shanghai:20261020T213000
+LOCATION:江山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：74　轮次：第7轮\n组别：A组\n对阵：江山队 VS 桐乡
+ 队\n时间：2026-10-20（周二）19:30\n场馆：江山市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g075@zba.local
+SUMMARY:余姚队 VS 安吉队（A组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261021T193000
+DTEND;TZID=Asia/Shanghai:20261021T213000
+LOCATION:余姚市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：75　轮次：第7轮\n组别：A组\n对阵：余姚队 VS 安吉
+ 队\n时间：2026-10-21（周三）19:30\n场馆：余姚市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g076@zba.local
+SUMMARY:湖州队 VS 宁波队（D组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261021T193000
+DTEND;TZID=Asia/Shanghai:20261021T213000
+LOCATION:湖州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：76　轮次：第7轮\n组别：D组\n对阵：湖州队 VS 宁波
+ 队\n时间：2026-10-21（周三）19:30\n场馆：湖州市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g077@zba.local
+SUMMARY:苍南队 VS 云和队（D组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261022T193000
+DTEND;TZID=Asia/Shanghai:20261022T213000
+LOCATION:苍南县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：77　轮次：第7轮\n组别：D组\n对阵：苍南队 VS 云和
+ 队\n时间：2026-10-22（周四）19:30\n场馆：苍南县体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g078@zba.local
+SUMMARY:嘉兴队 VS 义乌队（D组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261022T193000
+DTEND;TZID=Asia/Shanghai:20261022T213000
+LOCATION:嘉兴市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：78　轮次：第7轮\n组别：D组\n对阵：嘉兴队 VS 义乌
+ 队\n时间：2026-10-22（周四）19:30\n场馆：嘉兴市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g079@zba.local
+SUMMARY:诸暨队 VS 海宁队（C组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261023T193000
+DTEND;TZID=Asia/Shanghai:20261023T213000
+LOCATION:诸暨市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：79　轮次：第7轮\n组别：C组\n对阵：诸暨队 VS 海宁
+ 队\n时间：2026-10-23（周五）19:30\n场馆：诸暨市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g080@zba.local
+SUMMARY:金华队 VS 宁海队（C组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261023T193000
+DTEND;TZID=Asia/Shanghai:20261023T213000
+LOCATION:金华市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：80　轮次：第7轮\n组别：C组\n对阵：金华队 VS 宁海
+ 队\n时间：2026-10-23（周五）19:30\n场馆：金华市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g081@zba.local
+SUMMARY:玉环队 VS 衢州队（C组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261024T193000
+DTEND;TZID=Asia/Shanghai:20261024T213000
+LOCATION:玉环市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：81　轮次：第7轮\n组别：C组\n对阵：玉环队 VS 衢州
+ 队\n时间：2026-10-24（周六）19:30\n场馆：玉环市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g082@zba.local
+SUMMARY:永康队 VS 临海队（B组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261024T193000
+DTEND;TZID=Asia/Shanghai:20261024T213000
+LOCATION:永康市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：82　轮次：第7轮\n组别：B组\n对阵：永康队 VS 临海
+ 队\n时间：2026-10-24（周六）19:30\n场馆：永康市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g083@zba.local
+SUMMARY:绍兴队 VS 临安队（B组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261025T193000
+DTEND;TZID=Asia/Shanghai:20261025T213000
+LOCATION:绍兴市奥体中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：83　轮次：第7轮\n组别：B组\n对阵：绍兴队 VS 临安
+ 队\n时间：2026-10-25（周日）19:30\n场馆：绍兴市奥体中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g084@zba.local
+SUMMARY:舟山队 VS 瑞安队（B组第7轮）
+DTSTART;TZID=Asia/Shanghai:20261025T193000
+DTEND;TZID=Asia/Shanghai:20261025T213000
+LOCATION:舟山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：84　轮次：第7轮\n组别：B组\n对阵：舟山队 VS 瑞安
+ 队\n时间：2026-10-25（周日）19:30\n场馆：舟山市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g085@zba.local
+SUMMARY:余姚队 VS 江山队（A组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261027T193000
+DTEND;TZID=Asia/Shanghai:20261027T213000
+LOCATION:余姚市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：85　轮次：第8轮\n组别：A组\n对阵：余姚队 VS 江山
+ 队\n时间：2026-10-27（周二）19:30\n场馆：余姚市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g086@zba.local
+SUMMARY:桐乡队 VS 普陀队（A组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261027T193000
+DTEND;TZID=Asia/Shanghai:20261027T213000
+LOCATION:桐乡市全民健身中心
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：86　轮次：第8轮\n组别：A组\n对阵：桐乡队 VS 普陀
+ 队\n时间：2026-10-27（周二）19:30\n场馆：桐乡市全民健身
+ 中心
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g087@zba.local
+SUMMARY:台州队 VS 杭州队（A组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261028T193000
+DTEND;TZID=Asia/Shanghai:20261028T213000
+LOCATION:台州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：87　轮次：第8轮\n组别：A组\n对阵：台州队 VS 杭州
+ 队\n时间：2026-10-28（周三）19:30\n场馆：台州市体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g088@zba.local
+SUMMARY:永康队 VS 丽水队（B组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261028T193000
+DTEND;TZID=Asia/Shanghai:20261028T213000
+LOCATION:永康市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：88　轮次：第8轮\n组别：B组\n对阵：永康队 VS 丽水
+ 队\n时间：2026-10-28（周三）19:30\n场馆：永康市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g089@zba.local
+SUMMARY:舟山队 VS 临安队（B组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261029T193000
+DTEND;TZID=Asia/Shanghai:20261029T213000
+LOCATION:舟山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：89　轮次：第8轮\n组别：B组\n对阵：舟山队 VS 临安
+ 队\n时间：2026-10-29（周四）19:30\n场馆：舟山市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g090@zba.local
+SUMMARY:绍兴队 VS 临海队（B组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261029T193000
+DTEND;TZID=Asia/Shanghai:20261029T213000
+LOCATION:绍兴市奥体中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：90　轮次：第8轮\n组别：B组\n对阵：绍兴队 VS 临海
+ 队\n时间：2026-10-29（周四）19:30\n场馆：绍兴市奥体中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g091@zba.local
+SUMMARY:衢州队 VS 宁海队（C组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261030T193000
+DTEND;TZID=Asia/Shanghai:20261030T213000
+LOCATION:衢州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：91　轮次：第8轮\n组别：C组\n对阵：衢州队 VS 宁海
+ 队\n时间：2026-10-30（周五）19:30\n场馆：衢州市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g092@zba.local
+SUMMARY:金华队 VS 海宁队（C组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261030T193000
+DTEND;TZID=Asia/Shanghai:20261030T213000
+LOCATION:金华市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：92　轮次：第8轮\n组别：C组\n对阵：金华队 VS 海宁
+ 队\n时间：2026-10-30（周五）19:30\n场馆：金华市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g093@zba.local
+SUMMARY:诸暨队 VS 温州队（C组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261031T193000
+DTEND;TZID=Asia/Shanghai:20261031T213000
+LOCATION:诸暨市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：93　轮次：第8轮\n组别：C组\n对阵：诸暨队 VS 温州
+ 队\n时间：2026-10-31（周六）19:30\n场馆：诸暨市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g094@zba.local
+SUMMARY:湖州队 VS 义乌队（D组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261031T193000
+DTEND;TZID=Asia/Shanghai:20261031T213000
+LOCATION:湖州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：94　轮次：第8轮\n组别：D组\n对阵：湖州队 VS 义乌
+ 队\n时间：2026-10-31（周六）19:30\n场馆：湖州市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g095@zba.local
+SUMMARY:云和队 VS 嘉兴队（D组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261101T193000
+DTEND;TZID=Asia/Shanghai:20261101T213000
+LOCATION:云和县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：95　轮次：第8轮\n组别：D组\n对阵：云和队 VS 嘉兴
+ 队\n时间：2026-11-01（周日）19:30\n场馆：云和县体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g096@zba.local
+SUMMARY:苍南队 VS 富阳队（D组第8轮）
+DTSTART;TZID=Asia/Shanghai:20261101T193000
+DTEND;TZID=Asia/Shanghai:20261101T213000
+LOCATION:苍南县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：96　轮次：第8轮\n组别：D组\n对阵：苍南队 VS 富阳
+ 队\n时间：2026-11-01（周日）19:30\n场馆：苍南县体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g097@zba.local
+SUMMARY:杭州队 VS 桐乡队（A组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261102T193000
+DTEND;TZID=Asia/Shanghai:20261102T213000
+LOCATION:杭州奥体AT中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：97　轮次：第9轮\n组别：A组\n对阵：杭州队 VS 桐乡
+ 队\n时间：2026-11-02（周一）19:30\n场馆：杭州奥体AT中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g098@zba.local
+SUMMARY:普陀队 VS 余姚队（A组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261102T193000
+DTEND;TZID=Asia/Shanghai:20261102T213000
+LOCATION:舟山普陀体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：98　轮次：第9轮\n组别：A组\n对阵：普陀队 VS 余姚
+ 队\n时间：2026-11-02（周一）19:30\n场馆：舟山普陀体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g099@zba.local
+SUMMARY:江山队 VS 安吉队（A组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261102T193000
+DTEND;TZID=Asia/Shanghai:20261102T213000
+LOCATION:江山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：99　轮次：第9轮\n组别：A组\n对阵：江山队 VS 安吉
+ 队\n时间：2026-11-02（周一）19:30\n场馆：江山市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g100@zba.local
+SUMMARY:丽水队 VS 绍兴队（B组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261103T193000
+DTEND;TZID=Asia/Shanghai:20261103T213000
+LOCATION:丽水市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：100　轮次：第9轮\n组别：B组\n对阵：丽水队 VS 绍兴
+ 队\n时间：2026-11-03（周二）19:30\n场馆：丽水市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g101@zba.local
+SUMMARY:临海队 VS 舟山队（B组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261103T193000
+DTEND;TZID=Asia/Shanghai:20261103T213000
+LOCATION:临海市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：101　轮次：第9轮\n组别：B组\n对阵：临海队 VS 舟山
+ 队\n时间：2026-11-03（周二）19:30\n场馆：临海市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g102@zba.local
+SUMMARY:临安队 VS 瑞安队（B组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261103T193000
+DTEND;TZID=Asia/Shanghai:20261103T213000
+LOCATION:临安区体育文化会展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：102　轮次：第9轮\n组别：B组\n对阵：临安队 VS 瑞安
+ 队\n时间：2026-11-03（周二）19:30\n场馆：临安区体育文化
+ 会展中心体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g103@zba.local
+SUMMARY:温州队 VS 金华队（C组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261104T193000
+DTEND;TZID=Asia/Shanghai:20261104T213000
+LOCATION:温州体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：103　轮次：第9轮\n组别：C组\n对阵：温州队 VS 金华
+ 队\n时间：2026-11-04（周三）19:30\n场馆：温州体育中心体
+ 育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g104@zba.local
+SUMMARY:海宁队 VS 衢州队（C组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261104T193000
+DTEND;TZID=Asia/Shanghai:20261104T213000
+LOCATION:海宁市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：104　轮次：第9轮\n组别：C组\n对阵：海宁队 VS 衢州
+ 队\n时间：2026-11-04（周三）19:30\n场馆：海宁市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g105@zba.local
+SUMMARY:宁海队 VS 玉环队（C组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261104T193000
+DTEND;TZID=Asia/Shanghai:20261104T213000
+LOCATION:宁海县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：105　轮次：第9轮\n组别：C组\n对阵：宁海队 VS 玉环
+ 队\n时间：2026-11-04（周三）19:30\n场馆：宁海县体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g106@zba.local
+SUMMARY:嘉兴队 VS 富阳队（D组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261105T193000
+DTEND;TZID=Asia/Shanghai:20261105T213000
+LOCATION:嘉兴市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：106　轮次：第9轮\n组别：D组\n对阵：嘉兴队 VS 富阳
+ 队\n时间：2026-11-05（周四）19:30\n场馆：嘉兴市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g107@zba.local
+SUMMARY:云和队 VS 湖州队（D组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261105T193000
+DTEND;TZID=Asia/Shanghai:20261105T213000
+LOCATION:云和县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：107　轮次：第9轮\n组别：D组\n对阵：云和队 VS 湖州
+ 队\n时间：2026-11-05（周四）19:30\n场馆：云和县体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g108@zba.local
+SUMMARY:义乌队 VS 宁波队（D组第9轮）
+DTSTART;TZID=Asia/Shanghai:20261105T193000
+DTEND;TZID=Asia/Shanghai:20261105T213000
+LOCATION:义乌梅湖体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：108　轮次：第9轮\n组别：D组\n对阵：义乌队 VS 宁波
+ 队\n时间：2026-11-05（周四）19:30\n场馆：义乌梅湖体育中
+ 心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g109@zba.local
+SUMMARY:安吉队 VS 普陀队（A组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261106T193000
+DTEND;TZID=Asia/Shanghai:20261106T213000
+LOCATION:安吉县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：109　轮次：第10轮\n组别：A组\n对阵：安吉队 VS 普陀
+ 队\n时间：2026-11-06（周五）19:30\n场馆：安吉县体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g110@zba.local
+SUMMARY:余姚队 VS 杭州队（A组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261106T193000
+DTEND;TZID=Asia/Shanghai:20261106T213000
+LOCATION:余姚市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：110　轮次：第10轮\n组别：A组\n对阵：余姚队 VS 杭州
+ 队\n时间：2026-11-06（周五）19:30\n场馆：余姚市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g111@zba.local
+SUMMARY:桐乡队 VS 台州队（A组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261106T193000
+DTEND;TZID=Asia/Shanghai:20261106T213000
+LOCATION:桐乡市全民健身中心
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：111　轮次：第10轮\n组别：A组\n对阵：桐乡队 VS 台州
+ 队\n时间：2026-11-06（周五）19:30\n场馆：桐乡市全民健身
+ 中心
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g112@zba.local
+SUMMARY:瑞安队 VS 临海队（B组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261107T193000
+DTEND;TZID=Asia/Shanghai:20261107T213000
+LOCATION:瑞安市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：112　轮次：第10轮\n组别：B组\n对阵：瑞安队 VS 临海
+ 队\n时间：2026-11-07（周六）19:30\n场馆：瑞安市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g113@zba.local
+SUMMARY:舟山队 VS 丽水队（B组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261107T193000
+DTEND;TZID=Asia/Shanghai:20261107T213000
+LOCATION:舟山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：113　轮次：第10轮\n组别：B组\n对阵：舟山队 VS 丽水
+ 队\n时间：2026-11-07（周六）19:30\n场馆：舟山市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g114@zba.local
+SUMMARY:绍兴队 VS 永康队（B组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261107T193000
+DTEND;TZID=Asia/Shanghai:20261107T213000
+LOCATION:绍兴市奥体中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：114　轮次：第10轮\n组别：B组\n对阵：绍兴队 VS 永康
+ 队\n时间：2026-11-07（周六）19:30\n场馆：绍兴市奥体中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g115@zba.local
+SUMMARY:玉环队 VS 海宁队（C组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261108T193000
+DTEND;TZID=Asia/Shanghai:20261108T213000
+LOCATION:玉环市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：115　轮次：第10轮\n组别：C组\n对阵：玉环队 VS 海宁
+ 队\n时间：2026-11-08（周日）19:30\n场馆：玉环市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g116@zba.local
+SUMMARY:温州队 VS 衢州队（C组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261108T193000
+DTEND;TZID=Asia/Shanghai:20261108T213000
+LOCATION:温州体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：116　轮次：第10轮\n组别：C组\n对阵：温州队 VS 衢州
+ 队\n时间：2026-11-08（周日）19:30\n场馆：温州体育中心体
+ 育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g117@zba.local
+SUMMARY:金华队 VS 诸暨队（C组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261108T193000
+DTEND;TZID=Asia/Shanghai:20261108T213000
+LOCATION:金华市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：117　轮次：第10轮\n组别：C组\n对阵：金华队 VS 诸暨
+ 队\n时间：2026-11-08（周日）19:30\n场馆：金华市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g118@zba.local
+SUMMARY:云和队 VS 宁波队（D组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261109T193000
+DTEND;TZID=Asia/Shanghai:20261109T213000
+LOCATION:云和县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：118　轮次：第10轮\n组别：D组\n对阵：云和队 VS 宁波
+ 队\n时间：2026-11-09（周一）19:30\n场馆：云和县体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g119@zba.local
+SUMMARY:湖州队 VS 富阳队（D组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261109T193000
+DTEND;TZID=Asia/Shanghai:20261109T213000
+LOCATION:湖州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：119　轮次：第10轮\n组别：D组\n对阵：湖州队 VS 富阳
+ 队\n时间：2026-11-09（周一）19:30\n场馆：湖州市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g120@zba.local
+SUMMARY:嘉兴队 VS 苍南队（D组第10轮）
+DTSTART;TZID=Asia/Shanghai:20261109T193000
+DTEND;TZID=Asia/Shanghai:20261109T213000
+LOCATION:嘉兴市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：120　轮次：第10轮\n组别：D组\n对阵：嘉兴队 VS 苍南
+ 队\n时间：2026-11-09（周一）19:30\n场馆：嘉兴市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g121@zba.local
+SUMMARY:台州队 VS 余姚队（A组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261111T193000
+DTEND;TZID=Asia/Shanghai:20261111T213000
+LOCATION:台州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：121　轮次：第11轮\n组别：A组\n对阵：台州队 VS 余姚
+ 队\n时间：2026-11-11（周三）19:30\n场馆：台州市体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g122@zba.local
+SUMMARY:杭州队 VS 安吉队（A组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261111T193000
+DTEND;TZID=Asia/Shanghai:20261111T213000
+LOCATION:杭州奥体AT中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：122　轮次：第11轮\n组别：A组\n对阵：杭州队 VS 安吉
+ 队\n时间：2026-11-11（周三）19:30\n场馆：杭州奥体AT中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g123@zba.local
+SUMMARY:普陀队 VS 江山队（A组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261112T193000
+DTEND;TZID=Asia/Shanghai:20261112T213000
+LOCATION:舟山普陀体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：123　轮次：第11轮\n组别：A组\n对阵：普陀队 VS 江山
+ 队\n时间：2026-11-12（周四）19:30\n场馆：舟山普陀体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g124@zba.local
+SUMMARY:永康队 VS 舟山队（B组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261112T193000
+DTEND;TZID=Asia/Shanghai:20261112T213000
+LOCATION:永康市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：124　轮次：第11轮\n组别：B组\n对阵：永康队 VS 舟山
+ 队\n时间：2026-11-12（周四）19:30\n场馆：永康市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g125@zba.local
+SUMMARY:丽水队 VS 瑞安队（B组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261113T193000
+DTEND;TZID=Asia/Shanghai:20261113T213000
+LOCATION:丽水市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：125　轮次：第11轮\n组别：B组\n对阵：丽水队 VS 瑞安
+ 队\n时间：2026-11-13（周五）19:30\n场馆：丽水市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g126@zba.local
+SUMMARY:临海队 VS 临安队（B组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261113T193000
+DTEND;TZID=Asia/Shanghai:20261113T213000
+LOCATION:临海市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：126　轮次：第11轮\n组别：B组\n对阵：临海队 VS 临安
+ 队\n时间：2026-11-13（周五）19:30\n场馆：临海市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g127@zba.local
+SUMMARY:诸暨队 VS 衢州队（C组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261113T193000
+DTEND;TZID=Asia/Shanghai:20261113T213000
+LOCATION:诸暨市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：127　轮次：第11轮\n组别：C组\n对阵：诸暨队 VS 衢州
+ 队\n时间：2026-11-13（周五）19:30\n场馆：诸暨市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g128@zba.local
+SUMMARY:温州队 VS 玉环队（C组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261114T193000
+DTEND;TZID=Asia/Shanghai:20261114T213000
+LOCATION:温州体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：128　轮次：第11轮\n组别：C组\n对阵：温州队 VS 玉环
+ 队\n时间：2026-11-14（周六）19:30\n场馆：温州体育中心体
+ 育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g129@zba.local
+SUMMARY:宁海队 VS 海宁队（C组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261114T193000
+DTEND;TZID=Asia/Shanghai:20261114T213000
+LOCATION:宁海县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：129　轮次：第11轮\n组别：C组\n对阵：宁海队 VS 海宁
+ 队\n时间：2026-11-14（周六）19:30\n场馆：宁海县体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g130@zba.local
+SUMMARY:苍南队 VS 湖州队（D组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261114T193000
+DTEND;TZID=Asia/Shanghai:20261114T213000
+LOCATION:苍南县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：130　轮次：第11轮\n组别：D组\n对阵：苍南队 VS 湖州
+ 队\n时间：2026-11-14（周六）19:30\n场馆：苍南县体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g131@zba.local
+SUMMARY:富阳队 VS 宁波队（D组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261115T193000
+DTEND;TZID=Asia/Shanghai:20261115T213000
+LOCATION:富阳体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：131　轮次：第11轮\n组别：D组\n对阵：富阳队 VS 宁波
+ 队\n时间：2026-11-15（周日）19:30\n场馆：富阳体育中心体
+ 育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g132@zba.local
+SUMMARY:云和队 VS 义乌队（D组第11轮）
+DTSTART;TZID=Asia/Shanghai:20261115T193000
+DTEND;TZID=Asia/Shanghai:20261115T213000
+LOCATION:云和县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：132　轮次：第11轮\n组别：D组\n对阵：云和队 VS 义乌
+ 队\n时间：2026-11-15（周日）19:30\n场馆：云和县体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g133@zba.local
+SUMMARY:临安队 VS 丽水队（B组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261117T193000
+DTEND;TZID=Asia/Shanghai:20261117T213000
+LOCATION:临安区体育文化会展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：133　轮次：第12轮\n组别：B组\n对阵：临安队 VS 丽水
+ 队\n时间：2026-11-17（周二）19:30\n场馆：临安区体育文化
+ 会展中心体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g134@zba.local
+SUMMARY:瑞安队 VS 永康队（B组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261117T193000
+DTEND;TZID=Asia/Shanghai:20261117T213000
+LOCATION:瑞安市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：134　轮次：第12轮\n组别：B组\n对阵：瑞安队 VS 永康
+ 队\n时间：2026-11-17（周二）19:30\n场馆：瑞安市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g135@zba.local
+SUMMARY:舟山队 VS 绍兴队（B组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261118T193000
+DTEND;TZID=Asia/Shanghai:20261118T213000
+LOCATION:舟山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：135　轮次：第12轮\n组别：B组\n对阵：舟山队 VS 绍兴
+ 队\n时间：2026-11-18（周三）19:30\n场馆：舟山市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g136@zba.local
+SUMMARY:湖州队 VS 嘉兴队（D组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261118T193000
+DTEND;TZID=Asia/Shanghai:20261118T213000
+LOCATION:湖州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：136　轮次：第12轮\n组别：D组\n对阵：湖州队 VS 嘉兴
+ 队\n时间：2026-11-18（周三）19:30\n场馆：湖州市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g137@zba.local
+SUMMARY:义乌队 VS 富阳队（D组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261119T193000
+DTEND;TZID=Asia/Shanghai:20261119T213000
+LOCATION:义乌梅湖体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：137　轮次：第12轮\n组别：D组\n对阵：义乌队 VS 富阳
+ 队\n时间：2026-11-19（周四）19:30\n场馆：义乌梅湖体育中
+ 心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g138@zba.local
+SUMMARY:宁波队 VS 苍南队（D组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261119T193000
+DTEND;TZID=Asia/Shanghai:20261119T213000
+LOCATION:宁波市体育发展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：138　轮次：第12轮\n组别：D组\n对阵：宁波队 VS 苍南
+ 队\n时间：2026-11-19（周四）19:30\n场馆：宁波市体育发展
+ 中心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g139@zba.local
+SUMMARY:宁海队 VS 温州队（C组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261120T193000
+DTEND;TZID=Asia/Shanghai:20261120T213000
+LOCATION:宁海县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：139　轮次：第12轮\n组别：C组\n对阵：宁海队 VS 温州
+ 队\n时间：2026-11-20（周五）19:30\n场馆：宁海县体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g140@zba.local
+SUMMARY:玉环队 VS 诸暨队（C组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261120T193000
+DTEND;TZID=Asia/Shanghai:20261120T213000
+LOCATION:玉环市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：140　轮次：第12轮\n组别：C组\n对阵：玉环队 VS 诸暨
+ 队\n时间：2026-11-20（周五）19:30\n场馆：玉环市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g141@zba.local
+SUMMARY:衢州队 VS 金华队（C组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261121T193000
+DTEND;TZID=Asia/Shanghai:20261121T213000
+LOCATION:衢州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：141　轮次：第12轮\n组别：C组\n对阵：衢州队 VS 金华
+ 队\n时间：2026-11-21（周六）19:30\n场馆：衢州市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g142@zba.local
+SUMMARY:江山队 VS 杭州队（A组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261121T193000
+DTEND;TZID=Asia/Shanghai:20261121T213000
+LOCATION:江山市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：142　轮次：第12轮\n组别：A组\n对阵：江山队 VS 杭州
+ 队\n时间：2026-11-21（周六）19:30\n场馆：江山市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g143@zba.local
+SUMMARY:安吉队 VS 台州队（A组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261122T193000
+DTEND;TZID=Asia/Shanghai:20261122T213000
+LOCATION:安吉县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：143　轮次：第12轮\n组别：A组\n对阵：安吉队 VS 台州
+ 队\n时间：2026-11-22（周日）19:30\n场馆：安吉县体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g144@zba.local
+SUMMARY:余姚队 VS 桐乡队（A组第12轮）
+DTSTART;TZID=Asia/Shanghai:20261122T193000
+DTEND;TZID=Asia/Shanghai:20261122T213000
+LOCATION:余姚市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：144　轮次：第12轮\n组别：A组\n对阵：余姚队 VS 桐乡
+ 队\n时间：2026-11-22（周日）19:30\n场馆：余姚市体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g145@zba.local
+SUMMARY:温州队 VS 海宁队（C组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261124T193000
+DTEND;TZID=Asia/Shanghai:20261124T213000
+LOCATION:温州体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：145　轮次：第13轮\n组别：C组\n对阵：温州队 VS 海宁
+ 队\n时间：2026-11-24（周二）19:30\n场馆：温州体育中心体
+ 育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g146@zba.local
+SUMMARY:金华队 VS 玉环队（C组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261124T193000
+DTEND;TZID=Asia/Shanghai:20261124T213000
+LOCATION:金华市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：146　轮次：第13轮\n组别：C组\n对阵：金华队 VS 玉环
+ 队\n时间：2026-11-24（周二）19:30\n场馆：金华市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g147@zba.local
+SUMMARY:诸暨队 VS 宁海队（C组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261125T193000
+DTEND;TZID=Asia/Shanghai:20261125T213000
+LOCATION:诸暨市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：147　轮次：第13轮\n组别：C组\n对阵：诸暨队 VS 宁海
+ 队\n时间：2026-11-25（周三）19:30\n场馆：诸暨市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g148@zba.local
+SUMMARY:杭州队 VS 普陀队（A组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261125T193000
+DTEND;TZID=Asia/Shanghai:20261125T213000
+LOCATION:杭州奥体AT中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：148　轮次：第13轮\n组别：A组\n对阵：杭州队 VS 普陀
+ 队\n时间：2026-11-25（周三）19:30\n场馆：杭州奥体AT中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g149@zba.local
+SUMMARY:桐乡队 VS 安吉队（A组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261126T193000
+DTEND;TZID=Asia/Shanghai:20261126T213000
+LOCATION:桐乡市全民健身中心
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：149　轮次：第13轮\n组别：A组\n对阵：桐乡队 VS 安吉
+ 队\n时间：2026-11-26（周四）19:30\n场馆：桐乡市全民健身
+ 中心
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g150@zba.local
+SUMMARY:台州队 VS 江山队（A组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261126T193000
+DTEND;TZID=Asia/Shanghai:20261126T213000
+LOCATION:台州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：150　轮次：第13轮\n组别：A组\n对阵：台州队 VS 江山
+ 队\n时间：2026-11-26（周四）19:30\n场馆：台州市体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g151@zba.local
+SUMMARY:嘉兴队 VS 宁波队（D组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261127T193000
+DTEND;TZID=Asia/Shanghai:20261127T213000
+LOCATION:嘉兴市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：151　轮次：第13轮\n组别：D组\n对阵：嘉兴队 VS 宁波
+ 队\n时间：2026-11-27（周五）19:30\n场馆：嘉兴市体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g152@zba.local
+SUMMARY:苍南队 VS 义乌队（D组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261127T193000
+DTEND;TZID=Asia/Shanghai:20261127T213000
+LOCATION:苍南县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：152　轮次：第13轮\n组别：D组\n对阵：苍南队 VS 义乌
+ 队\n时间：2026-11-27（周五）19:30\n场馆：苍南县体育中心
+ 体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g153@zba.local
+SUMMARY:富阳队 VS 云和队（D组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261128T193000
+DTEND;TZID=Asia/Shanghai:20261128T213000
+LOCATION:富阳体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：153　轮次：第13轮\n组别：D组\n对阵：富阳队 VS 云和
+ 队\n时间：2026-11-28（周六）19:30\n场馆：富阳体育中心体
+ 育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g154@zba.local
+SUMMARY:绍兴队 VS 瑞安队（B组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261128T193000
+DTEND;TZID=Asia/Shanghai:20261128T213000
+LOCATION:绍兴市奥体中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：154　轮次：第13轮\n组别：B组\n对阵：绍兴队 VS 瑞安
+ 队\n时间：2026-11-28（周六）19:30\n场馆：绍兴市奥体中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g155@zba.local
+SUMMARY:永康队 VS 临安队（B组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261129T193000
+DTEND;TZID=Asia/Shanghai:20261129T213000
+LOCATION:永康市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：155　轮次：第13轮\n组别：B组\n对阵：永康队 VS 临安
+ 队\n时间：2026-11-29（周日）19:30\n场馆：永康市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g156@zba.local
+SUMMARY:丽水队 VS 临海队（B组第13轮）
+DTSTART;TZID=Asia/Shanghai:20261129T193000
+DTEND;TZID=Asia/Shanghai:20261129T213000
+LOCATION:丽水市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：156　轮次：第13轮\n组别：B组\n对阵：丽水队 VS 临海
+ 队\n时间：2026-11-29（周日）19:30\n场馆：丽水市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g157@zba.local
+SUMMARY:宁波队 VS 湖州队（D组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261202T193000
+DTEND;TZID=Asia/Shanghai:20261202T213000
+LOCATION:宁波市体育发展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：157　轮次：第14轮\n组别：D组\n对阵：宁波队 VS 湖州
+ 队\n时间：2026-12-02（周三）19:30\n场馆：宁波市体育发展
+ 中心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g158@zba.local
+SUMMARY:云和队 VS 苍南队（D组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261202T193000
+DTEND;TZID=Asia/Shanghai:20261202T213000
+LOCATION:云和县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：158　轮次：第14轮\n组别：D组\n对阵：云和队 VS 苍南
+ 队\n时间：2026-12-02（周三）19:30\n场馆：云和县体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g159@zba.local
+SUMMARY:义乌队 VS 嘉兴队（D组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261202T193000
+DTEND;TZID=Asia/Shanghai:20261202T213000
+LOCATION:义乌梅湖体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：159　轮次：第14轮\n组别：D组\n对阵：义乌队 VS 嘉兴
+ 队\n时间：2026-12-02（周三）19:30\n场馆：义乌梅湖体育中
+ 心体育馆
+CATEGORIES:浙BA,D组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g160@zba.local
+SUMMARY:瑞安队 VS 舟山队（B组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261203T193000
+DTEND;TZID=Asia/Shanghai:20261203T213000
+LOCATION:瑞安市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：160　轮次：第14轮\n组别：B组\n对阵：瑞安队 VS 舟山
+ 队\n时间：2026-12-03（周四）19:30\n场馆：瑞安市体育中心
+ 体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g161@zba.local
+SUMMARY:临海队 VS 永康队（B组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261203T193000
+DTEND;TZID=Asia/Shanghai:20261203T213000
+LOCATION:临海市体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：161　轮次：第14轮\n组别：B组\n对阵：临海队 VS 永康
+ 队\n时间：2026-12-03（周四）19:30\n场馆：临海市体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g162@zba.local
+SUMMARY:临安队 VS 绍兴队（B组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261203T193000
+DTEND;TZID=Asia/Shanghai:20261203T213000
+LOCATION:临安区体育文化会展中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：162　轮次：第14轮\n组别：B组\n对阵：临安队 VS 绍兴
+ 队\n时间：2026-12-03（周四）19:30\n场馆：临安区体育文化
+ 会展中心体育馆
+CATEGORIES:浙BA,B组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g163@zba.local
+SUMMARY:普陀队 VS 台州队（A组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261204T193000
+DTEND;TZID=Asia/Shanghai:20261204T213000
+LOCATION:舟山普陀体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：163　轮次：第14轮\n组别：A组\n对阵：普陀队 VS 台州
+ 队\n时间：2026-12-04（周五）19:30\n场馆：舟山普陀体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g164@zba.local
+SUMMARY:桐乡队 VS 江山队（A组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261204T193000
+DTEND;TZID=Asia/Shanghai:20261204T213000
+LOCATION:桐乡市全民健身中心
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：164　轮次：第14轮\n组别：A组\n对阵：桐乡队 VS 江山
+ 队\n时间：2026-12-04（周五）19:30\n场馆：桐乡市全民健身
+ 中心
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g165@zba.local
+SUMMARY:安吉队 VS 余姚队（A组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261204T193000
+DTEND;TZID=Asia/Shanghai:20261204T213000
+LOCATION:安吉县体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：165　轮次：第14轮\n组别：A组\n对阵：安吉队 VS 余姚
+ 队\n时间：2026-12-04（周五）19:30\n场馆：安吉县体育中心
+ 体育馆
+CATEGORIES:浙BA,A组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g166@zba.local
+SUMMARY:海宁队 VS 诸暨队（C组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261205T193000
+DTEND;TZID=Asia/Shanghai:20261205T213000
+LOCATION:海宁市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：166　轮次：第14轮\n组别：C组\n对阵：海宁队 VS 诸暨
+ 队\n时间：2026-12-05（周六）19:30\n场馆：海宁市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g167@zba.local
+SUMMARY:宁海队 VS 金华队（C组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261205T193000
+DTEND;TZID=Asia/Shanghai:20261205T213000
+LOCATION:宁海县体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：167　轮次：第14轮\n组别：C组\n对阵：宁海队 VS 金华
+ 队\n时间：2026-12-05（周六）19:30\n场馆：宁海县体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:zba2026-g168@zba.local
+SUMMARY:衢州队 VS 玉环队（C组第14轮）
+DTSTART;TZID=Asia/Shanghai:20261205T193000
+DTEND;TZID=Asia/Shanghai:20261205T213000
+LOCATION:衢州市体育中心体育馆
+DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
+ 序：168　轮次：第14轮\n组别：C组\n对阵：衢州队 VS 玉环
+ 队\n时间：2026-12-05（周六）19:30\n场馆：衢州市体育中心
+ 体育馆
+CATEGORIES:浙BA,C组
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
