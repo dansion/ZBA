@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>浙BA 2026 · 添加赛程到日历</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --accent-dark: #1e3a8a;
+      --border: #e5e7eb;
+      --radius: 14px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px -6px rgba(0,0,0,0.10);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      color: white;
+      padding: 14px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.12) 0%, transparent 40%);
+      pointer-events: none;
+    }
+    header h1 { font-size: 1.15rem; font-weight: 700; position: relative; }
+    header p { margin-top: 2px; font-size: 0.82rem; opacity: 0.9; position: relative; }
+    .wrap {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+      flex: 1;
+      width: 100%;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px 24px 24px;
+      text-align: center;
+    }
+    .cal-name { font-size: 1.25rem; font-weight: 700; }
+    .cal-desc { font-size: 0.85rem; color: var(--muted); margin-top: 6px; }
+    .stat-row {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin: 18px 0 22px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .stat-row b { display: block; font-size: 1.3rem; color: var(--accent); font-weight: 700; }
+    .btn-group { display: grid; gap: 12px; }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: white;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-family: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .btn .icon { font-size: 1.2rem; line-height: 1; }
+    .btn .badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      background: var(--accent);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 999px;
+      margin-left: 4px;
+    }
+    .btn.primary { background: var(--accent); color: white; border-color: var(--accent); }
+    .btn.primary .badge { background: white; color: var(--accent); }
+    .btn.primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: white; }
+    .btn:hover:not(.primary) { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+    .hint { margin-top: 16px; font-size: 0.75rem; color: var(--muted); line-height: 1.6; }
+    .hint a { color: var(--accent); text-decoration: none; }
+    .hint a:hover { text-decoration: underline; }
+    .toast {
+      position: fixed; bottom: 24px; left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--text); color: white;
+      padding: 10px 20px; border-radius: 999px;
+      font-size: 0.85rem; opacity: 0; pointer-events: none;
+      transition: all 0.3s ease; z-index: 50;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>浙BA 2026 赛程日历</h1>
+    <p>一键添加到你的手机日历，开赛自动提醒</p>
+  </header>
+
+  <div class="wrap">
+    <div class="card">
+      <div class="cal-name">浙BA 2026省级争霸赛小组赛</div>
+      <div class="cal-desc">2026 浙江省城市篮球联赛 · 省级争霸赛小组赛完整赛程</div>
+      <div class="stat-row">
+        <div><b>168</b>场比赛</div>
+        <div><b>28</b>支队伍</div>
+        <div><b>4</b>个小组</div>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn primary" id="btn-apple">
+          <span class="icon">🍎</span>添加到苹果日历
+          <span class="badge" id="badge-apple" style="display:none">推荐</span>
+        </a>
+        <a class="btn" id="btn-android">
+          <span class="icon">🤖</span>添加到安卓日历
+          <span class="badge" id="badge-android" style="display:none">推荐</span>
+        </a>
+      </div>
+
+      <p class="hint">
+        苹果系统将作为订阅日历自动同步；安卓通过 Google 日历订阅。<br />
+        无法自动添加？可<a id="link-download" href="zba2026.ics" download>下载 .ics 文件</a>后在日历 App 中手动导入。
+      </p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">已开始下载 .ics 文件</div>
+
+  <script>
+    (function () {
+      const here = new URL(window.location.href);
+      const dir = here.pathname.replace(/[^/]*$/, ''); // 本文件所在目录
+      const icsAbs = here.origin + dir + 'zba2026.ics'; // ics 与本文件同在根目录
+      const webcalUrl = icsAbs.replace(/^https?:/, 'webcal:');
+
+      // 苹果：webcal 订阅
+      document.getElementById('btn-apple').href = webcalUrl;
+      // 安卓：Google 日历订阅（安卓通用）
+      document.getElementById('btn-android').href =
+        'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(icsAbs);
+      document.getElementById('btn-android').target = '_blank';
+      document.getElementById('btn-android').rel = 'noopener';
+      document.getElementById('link-download').href = 'zba2026.ics';
+
+      // 按系统自动高亮推荐项
+      const ua = navigator.userAgent;
+      const isApple = /iPhone|iPad|iPod|Macintosh|Mac OS X/i.test(ua);
+      const isAndroid = /Android/i.test(ua);
+      if (isApple) document.getElementById('badge-apple').style.display = '';
+      else if (isAndroid) {
+        document.getElementById('badge-android').style.display = '';
+        // 安卓把主按钮样式交给安卓
+        document.getElementById('btn-apple').classList.remove('primary');
+        document.getElementById('btn-android').classList.add('primary');
+      }
+
+      const toast = document.getElementById('toast');
+      document.getElementById('link-download').addEventListener('click', () => {
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2200);
+      });
+    })();
+  </script>
+</body>
+</html>
