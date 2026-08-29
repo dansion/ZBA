@@ -114,6 +114,19 @@
       transition: all 0.3s ease; z-index: 50;
     }
     .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+    .guide {
+      margin-top: 18px;
+      padding: 16px;
+      background: var(--bg);
+      border-radius: 12px;
+      text-align: left;
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+    .guide-title { font-weight: 700; margin-bottom: 8px; color: var(--text); }
+    .guide-item { color: var(--muted); margin-bottom: 4px; }
+    .guide-item b { color: var(--text); margin-right: 4px; }
+    .guide-note { margin-top: 10px; color: var(--muted); font-size: 0.75rem; }
   </style>
 </head>
 <body>
@@ -137,16 +150,24 @@
           <span class="icon">🍎</span>添加到苹果日历
           <span class="badge" id="badge-apple" style="display:none">推荐</span>
         </a>
-        <a class="btn" id="btn-android">
+        <a class="btn" id="btn-android" href="zba2026.ics" download>
           <span class="icon">🤖</span>添加到安卓日历
           <span class="badge" id="badge-android" style="display:none">推荐</span>
         </a>
       </div>
 
       <p class="hint">
-        苹果系统将作为订阅日历自动同步；安卓通过 Google 日历订阅。<br />
-        无法自动添加？可<a id="link-download" href="zba2026.ics" download>下载 .ics 文件</a>后在日历 App 中手动导入。
+        苹果系统作为订阅日历自动同步更新；安卓下载 .ics 后由系统日历 App 导入。<br />
+        也可<a id="link-download" href="zba2026.ics" download>单独下载 .ics 文件</a>。
       </p>
+
+      <div class="guide" id="android-guide" hidden>
+        <div class="guide-title">安卓导入步骤</div>
+        <div class="guide-item"><b>小米</b>打开「日历」→ 右下角 ⋯ → 设置 → 导入 .ics，选择下载的文件</div>
+        <div class="guide-item"><b>华为</b>打开「日历」→ 右下角 ⋮ → 设置 → 导入日历 → 选择文件</div>
+        <div class="guide-item"><b>OPPO</b>打开「日历」→ 右下角 ⋮ → 设置 → 导入 .ics 文件</div>
+        <p class="guide-note">提示：.ics 为一次性导入，赛程如有更新需重新导入。</p>
+      </div>
     </div>
   </div>
 
@@ -161,11 +182,7 @@
 
       // 苹果：webcal 订阅
       document.getElementById('btn-apple').href = webcalUrl;
-      // 安卓：Google 日历订阅（安卓通用）
-      document.getElementById('btn-android').href =
-        'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(icsAbs);
-      document.getElementById('btn-android').target = '_blank';
-      document.getElementById('btn-android').rel = 'noopener';
+      // 安卓：下载 .ics 由系统日历 App 导入（中国网络无法访问 Google 服务）
       document.getElementById('link-download').href = 'zba2026.ics';
 
       // 按系统自动高亮推荐项
@@ -175,15 +192,25 @@
       if (isApple) document.getElementById('badge-apple').style.display = '';
       else if (isAndroid) {
         document.getElementById('badge-android').style.display = '';
-        // 安卓把主按钮样式交给安卓
         document.getElementById('btn-apple').classList.remove('primary');
         document.getElementById('btn-android').classList.add('primary');
       }
 
       const toast = document.getElementById('toast');
-      document.getElementById('link-download').addEventListener('click', () => {
+      const guide = document.getElementById('android-guide');
+      function showToast(msg) {
+        toast.textContent = msg;
         toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 2200);
+        setTimeout(() => toast.classList.remove('show'), 2600);
+      }
+      // 安卓按钮：下载 .ics 并展开导入指引
+      document.getElementById('btn-android').addEventListener('click', () => {
+        showToast('已开始下载 .ics，请在日历 App 中导入');
+        if (guide.hidden) guide.hidden = false;
+      });
+      document.getElementById('link-download').addEventListener('click', () => {
+        showToast('已开始下载 .ics 文件');
+        if (guide.hidden) guide.hidden = false;
       });
     })();
   </script>
