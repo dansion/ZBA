@@ -258,24 +258,10 @@
     </section>
   </div>
 
+  <script src="data/data.js"></script>
   <script>
     const groupOrder = ['A', 'B', 'C', 'D'];
     const groupColorClass = { A: 'A', B: 'B', C: 'C', D: 'D' };
-
-    async function loadData() {
-      try {
-        const [teamsRes, scheduleRes] = await Promise.all([
-          fetch('data/teams.json'),
-          fetch('data/schedule.json')
-        ]);
-        const teams = await teamsRes.json();
-        const schedule = await scheduleRes.json();
-        return { teams, schedule };
-      } catch (err) {
-        document.getElementById('groups-container').innerHTML = '<p class="empty">数据加载失败，请确认 data/teams.json 与 data/schedule.json 存在。</p>';
-        throw err;
-      }
-    }
 
     function groupBy(array, key) {
       return array.reduce((acc, item) => {
@@ -388,10 +374,8 @@
       });
     });
 
-    loadData().then(({ teams, schedule }) => {
-      renderGroups(teams);
-      renderSchedule(schedule, teams);
-    });
+    renderGroups(teamsData);
+    renderSchedule(scheduleData, teamsData);
   </script>
 </body>
 </html>
