@@ -3,215 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>浙BA 2026 · 添加赛程到日历</title>
+  <title>浙BA 2026 · 首页</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg: #f4f6f8;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --accent: #2563eb;
-      --accent-dark: #1e3a8a;
-      --border: #e5e7eb;
-      --radius: 14px;
-      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px -6px rgba(0,0,0,0.10);
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-      color: white;
-      padding: 14px 20px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    header::before {
-      content: "";
-      position: absolute;
-      top: -50%; left: -50%;
-      width: 200%; height: 200%;
-      background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.12) 0%, transparent 40%);
-      pointer-events: none;
-    }
-    header h1 { font-size: 1.15rem; font-weight: 700; position: relative; }
-    header p { margin-top: 2px; font-size: 0.82rem; opacity: 0.9; position: relative; }
-    .wrap {
-      max-width: 620px;
-      margin: 0 auto;
-      padding: 28px 20px 48px;
-      flex: 1;
-      width: 100%;
-    }
-    .card {
-      background: var(--card);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 28px 24px 24px;
-      text-align: center;
-    }
-    .cal-name { font-size: 1.25rem; font-weight: 700; }
-    .cal-desc { font-size: 0.85rem; color: var(--muted); margin-top: 6px; }
-    .stat-row {
-      display: flex;
-      justify-content: center;
-      gap: 28px;
-      margin: 18px 0 22px;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-    .stat-row b { display: block; font-size: 1.3rem; color: var(--accent); font-weight: 700; }
-    .btn-group { display: grid; gap: 12px; }
-    .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 18px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: white;
-      color: var(--text);
-      font-size: 0.95rem;
-      font-weight: 600;
-      font-family: inherit;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.18s ease;
-    }
-    .btn .icon { font-size: 1.2rem; line-height: 1; }
-    .btn .badge {
-      font-size: 0.7rem;
-      font-weight: 700;
-      background: var(--accent);
-      color: white;
-      padding: 2px 8px;
-      border-radius: 999px;
-      margin-left: 4px;
-    }
-    .btn.primary { background: var(--accent); color: white; border-color: var(--accent); }
-    .btn.primary .badge { background: white; color: var(--accent); }
-    .btn.primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: white; }
-    .btn:hover:not(.primary) { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
-    .hint { margin-top: 16px; font-size: 0.75rem; color: var(--muted); line-height: 1.6; }
-    .hint a { color: var(--accent); text-decoration: none; }
-    .hint a:hover { text-decoration: underline; }
-    .toast {
-      position: fixed; bottom: 24px; left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: var(--text); color: white;
-      padding: 10px 20px; border-radius: 999px;
-      font-size: 0.85rem; opacity: 0; pointer-events: none;
-      transition: all 0.3s ease; z-index: 50;
-    }
-    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-    .guide {
-      margin-top: 18px;
-      padding: 16px;
-      background: var(--bg);
-      border-radius: 12px;
-      text-align: left;
-      font-size: 0.82rem;
-      line-height: 1.7;
-    }
-    .guide-title { font-weight: 700; margin-bottom: 8px; color: var(--text); }
-    .guide-item { color: var(--muted); margin-bottom: 4px; }
-    .guide-item b { color: var(--text); margin-right: 4px; }
-    .guide-note { margin-top: 10px; color: var(--muted); font-size: 0.75rem; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-index">
   <header>
-    <h1>浙BA 2026 赛程日历</h1>
-    <p>一键添加到你的手机日历，开赛自动提醒</p>
+    <div class="hbar">
+      <h1>浙BA 2026</h1>
+    </div>
   </header>
 
   <div class="wrap">
-    <div class="card">
-      <div class="cal-name">浙BA 2026省级争霸赛小组赛</div>
-      <div class="cal-desc">2026 浙江省城市篮球联赛 · 省级争霸赛小组赛完整赛程</div>
-      <div class="stat-row">
-        <div><b>168</b>场比赛</div>
-        <div><b>28</b>支队伍</div>
-        <div><b>4</b>个小组</div>
+    <!-- 1. 今天 / 明天赛程：行样式与 schedule.html 一致（共用 .matches） -->
+    <section class="card day-card">
+      <div class="sec-title">今天赛程 <span class="date" id="today-date"></span></div>
+      <div class="matches" id="today-list">
+        <div class="msg">正在加载今天赛程…</div>
       </div>
+    </section>
 
-      <div class="btn-group">
-        <a class="btn primary" id="btn-apple">
-          <span class="icon">🍎</span>添加到苹果日历
-          <span class="badge" id="badge-apple" style="display:none">推荐</span>
-        </a>
-        <a class="btn" id="btn-android" href="zba2026.ics" download>
-          <span class="icon">🤖</span>添加到安卓日历
-          <span class="badge" id="badge-android" style="display:none">推荐</span>
-        </a>
+    <section class="card day-card">
+      <div class="sec-title">明天赛程 <span class="date" id="tomorrow-date"></span></div>
+      <div class="matches" id="tomorrow-list">
+        <div class="msg">正在加载明天赛程…</div>
       </div>
+    </section>
 
-      <p class="hint">
-        苹果系统作为订阅日历自动同步更新；安卓下载 .ics 后由系统日历 App 导入。<br />
-        也可<a id="link-download" href="zba2026.ics" download>单独下载 .ics 文件</a>。
-      </p>
-
-      <div class="guide" id="android-guide" hidden>
-        <div class="guide-title">安卓导入步骤</div>
-        <div class="guide-item"><b>小米</b>打开「日历」→ 右下角 ⋯ → 设置 → 导入 .ics，选择下载的文件</div>
-        <div class="guide-item"><b>华为</b>打开「日历」→ 右下角 ⋮ → 设置 → 导入日历 → 选择文件</div>
-        <div class="guide-item"><b>OPPO</b>打开「日历」→ 右下角 ⋮ → 设置 → 导入 .ics 文件</div>
-        <p class="guide-note">提示：.ics 为一次性导入，赛程如有更新需重新导入。</p>
-      </div>
+    <!-- 2 & 3. 入口：小组积分榜 / 订阅赛程日历 -->
+    <div class="nav">
+      <a class="card nav-card" href="teams.html">
+        <span class="ico">🏆</span>
+        <span class="t">小组积分榜</span>
+        <span class="d">A / B / C / D 四组实时排名与积分</span>
+        <span class="go">查看积分榜 ›</span>
+      </a>
+      <a class="card nav-card" href="calendar.html">
+        <span class="ico">📅</span>
+        <span class="t">订阅赛程日历</span>
+        <span class="d">添加到手机日历，开赛自动提醒</span>
+        <span class="go">订阅日历 ›</span>
+      </a>
     </div>
   </div>
 
-  <div class="toast" id="toast">已开始下载 .ics 文件</div>
+  <p class="footer">
+    数据来自 <code>data/data.js</code> · 浙BA 2026 浙江省城市篮球联赛
+  </p>
 
+  <script src="data/data.js"></script>
   <script>
     (function () {
-      const here = new URL(window.location.href);
-      const dir = here.pathname.replace(/[^/]*$/, ''); // 本文件所在目录
-      const icsAbs = here.origin + dir + 'zba2026.ics'; // ics 与本文件同在根目录
-      const webcalUrl = icsAbs.replace(/^https?:/, 'webcal:');
+      var todayList = document.getElementById('today-list');
+      var tomorrowList = document.getElementById('tomorrow-list');
 
-      // 苹果：webcal 订阅
-      document.getElementById('btn-apple').href = webcalUrl;
-      // 安卓：下载 .ics 由系统日历 App 导入（中国网络无法访问 Google 服务）
-      document.getElementById('link-download').href = 'zba2026.ics';
-
-      // 按系统自动高亮推荐项
-      const ua = navigator.userAgent;
-      const isApple = /iPhone|iPad|iPod|Macintosh|Mac OS X/i.test(ua);
-      const isAndroid = /Android/i.test(ua);
-      if (isApple) document.getElementById('badge-apple').style.display = '';
-      else if (isAndroid) {
-        document.getElementById('badge-android').style.display = '';
-        document.getElementById('btn-apple').classList.remove('primary');
-        document.getElementById('btn-android').classList.add('primary');
+      function esc(s) {
+        return String(s).replace(/[&<>"]/g, function (c) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+        });
+      }
+      function logoImg(t, name) {
+        return (t && t.logo)
+          ? '<img class="mlogo" src="' + esc(t.logo) + '" alt="' + esc(name) +
+            '" loading="lazy" onerror="this.style.visibility=\'hidden\'">'
+          : '<span class="mlogo"></span>';
+      }
+      // 按比赛时间升序（日期早的在前）；同一时刻以场序稳定排序
+      function byTime(a, b) {
+        var ta = String(a['日期'] || '').split(' ')[0] + ' ' + (a['时间'] || '');
+        var tb = String(b['日期'] || '').split(' ')[0] + ' ' + (b['时间'] || '');
+        if (ta !== tb) return ta < tb ? -1 : 1;
+        return a['场序'] - b['场序'];
       }
 
-      const toast = document.getElementById('toast');
-      const guide = document.getElementById('android-guide');
-      function showToast(msg) {
-        toast.textContent = msg;
-        toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 2600);
+      if (typeof teamsData === 'undefined' || typeof scheduleData === 'undefined') {
+        var errHtml = '<div class="msg error">数据加载失败：请确认 <code>data/data.js</code> 与本页面一并存在。</div>';
+        todayList.innerHTML = errHtml;
+        tomorrowList.innerHTML = errHtml;
+        return;
       }
-      // 安卓按钮：下载 .ics 并展开导入指引
-      document.getElementById('btn-android').addEventListener('click', () => {
-        showToast('已开始下载 .ics，请在日历 App 中导入');
-        if (guide.hidden) guide.hidden = false;
-      });
-      document.getElementById('link-download').addEventListener('click', () => {
-        showToast('已开始下载 .ics 文件');
-        if (guide.hidden) guide.hidden = false;
-      });
+
+      var teamMap = {};
+      teamsData.forEach(function (t) { teamMap[t['名称']] = t; });
+
+      // 与 schedule.html 完全一致的行结构（首页赛程不针对单一球队，故不高亮）
+      function renderMatches(matches) {
+        return matches.map(function (m) {
+          var home = teamMap[m['主场队']] || {};
+          var away = teamMap[m['客场队']] || {};
+          var isPlayed = m['主队得分'] != null && m['客队得分'] != null;
+
+          var centerBottom = isPlayed
+            ? '<div class="score">' + m['主队得分'] + ' : ' + m['客队得分'] + '</div>'
+            : '<div class="venue">' + esc(home['主场场馆'] || '待定') + '</div>';
+
+          var dparts = String(m['日期'] || '').split(' ');
+          var dateStr = dparts[0] || '';
+          var weekStr = dparts[1] || '';
+          var timeStr = m['时间'] || '';
+
+          return '<div class="match">' +
+            '<div class="side home">' +
+              logoImg(home, m['主场队']) +
+              '<span class="mname">' + esc(m['主场队']) + '</span>' +
+            '</div>' +
+            '<div class="center">' +
+              '<div class="when"><span class="date">' + esc(dateStr) + '</span>' +
+                '<span class="time">' + esc((weekStr + ' ' + timeStr).trim()) + '</span></div>' +
+              centerBottom +
+            '</div>' +
+            '<div class="side away">' +
+              '<span class="mname">' + esc(m['客场队']) + '</span>' +
+              logoImg(away, m['客场队']) +
+            '</div>' +
+          '</div>';
+        }).join('');
+      }
+
+      // 填充某天的赛程：offset=0 今天、1 明天
+      var WD = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+      function fillDay(listEl, dateEl, offset, emptyMsg) {
+        var d = new Date();
+        d.setDate(d.getDate() + offset);
+        var mm = String(d.getMonth() + 1); if (mm.length < 2) mm = '0' + mm;
+        var dd = String(d.getDate()); if (dd.length < 2) dd = '0' + dd;
+        var ymd = d.getFullYear() + '-' + mm + '-' + dd;
+        dateEl.textContent = ymd + ' ' + WD[d.getDay()];
+
+        var matches = scheduleData.filter(function (m) {
+          return String(m['日期'] || '').split(' ')[0] === ymd;
+        }).sort(byTime);
+
+        listEl.innerHTML = matches.length
+          ? renderMatches(matches)
+          : '<div class="msg">' + emptyMsg + '</div>';
+      }
+
+      fillDay(todayList, document.getElementById('today-date'), 0,
+        '今天没有比赛。<br>可从 <a href="teams.html">小组积分榜</a> 查看各队完整赛程。');
+      fillDay(tomorrowList, document.getElementById('tomorrow-date'), 1,
+        '明天没有比赛。');
     })();
   </script>
 </body>
