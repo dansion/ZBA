@@ -118,11 +118,11 @@
               ? '<img class="logo" src="' + esc(s.logo) + '" alt="' + esc(s.名称) +
                 '" loading="lazy" onerror="this.style.visibility=\'hidden\'">'
               : '<span class="logo"></span>';
-            return '<a class="row team' + (idx % 2 === 1 ? ' alt' : '') + '" href="schedule.html?team=' + encodeURIComponent(s.名称) + '" title="查看 ' + esc(s.名称) + ' 赛程">' +
-              '<span class="rank' + (rank <= 2 ? ' top' : '') + '">' + rank + '</span>' +
+            return '<a class="row team' + (rank <= 4 ? ' qualify' : '') + (idx % 2 === 1 ? ' alt' : '') + '" href="schedule.html?team=' + encodeURIComponent(s.名称) + '" title="查看 ' + esc(s.名称) + ' 赛程">' +
+              '<span class="rank' + (rank <= 4 ? ' top' : '') + '">' + rank + '</span>' +
               logo +
               '<span class="name">' + esc(s.名称) + '</span>' +
-              '<span class="pts">' + s.积分 + '</span>' +
+              '<span class="pts">' + (s.积分 === 0 ? '-' : s.积分) + '</span>' +
             '</a>';
           }).join('');
           return '<section class="card group">' +
