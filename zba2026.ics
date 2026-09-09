@@ -93,13 +93,13 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:zba2026-g006@zba.local
-SUMMARY:宁海队 VS 衢州队（C组第1轮）
+SUMMARY:衢州队 VS 宁海队（C组第1轮）
 DTSTART;TZID=Asia/Shanghai:20261030T193000
 DTEND;TZID=Asia/Shanghai:20261030T213000
-LOCATION:宁海县体育馆
+LOCATION:衢州市体育中心体育馆
 DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
- 序：6 轮次：第1轮\n组别：C组\n对阵：宁海队 VS 衢州队
- \n时间：2026-10-30（周五）19:30\n场馆：宁海县体育馆
+ 序：6 轮次：第1轮\n组别：C组\n对阵：衢州队 VS 宁海队
+ \n时间：2026-10-30（周五）19:30\n场馆：衢州市体育中心体育馆
  \n积分榜 https://zba.dansion.com/teams.html
 CATEGORIES:浙BA,C组
 TRANSP:OPAQUE
@@ -1348,7 +1348,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:zba2026-g091@zba.local
-SUMMARY:衢州队 VS 宁海队（C组第8轮）
+SUMMARY:衢州队 VS 宁海队 [73:61]
 DTSTART;TZID=Asia/Shanghai:20260909T193000
 DTEND;TZID=Asia/Shanghai:20260909T213000
 LOCATION:衢州市体育中心体育馆
