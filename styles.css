@@ -458,3 +458,282 @@ body.page-calendar { line-height: 1.6; }
 @media (max-width: 380px) {
   .page-index .nav { grid-template-columns: 1fr; }
 }
+
+/* --------------------------------------------------------------------------
+   6. newTeams.html —— 直播风格积分榜（body.page-newteams）
+   直播海报风：左上蓝→右下红渐变 + 模糊球体底纹 + 顶部授权标/联赛标题/
+   积分榜标牌 + 白色胶囊战报栏 + 双栏小组积分榜（GROUP C 蓝 / GROUP D 红）
+   + 新闻滚动条。固定设计不随深色模式切换，颜色以本作用域变量收敛。
+   -------------------------------------------------------------------------- */
+body.page-newteams {
+  --zb-ink: #0a1c3a;
+  --zb-blue: #1e5fd0;
+  --zb-red: #d43a2f;
+  --zb-red-deep: #a12722;
+  --zb-orange: #ff7a1a;
+  --zb-orange-light: #ffa14d;
+  --zb-gold: #ffd54f;
+  /* 本页固定海报设计的圆角令牌（不受全站 --radius 影响） */
+  --zb-radius: 10px;
+  --zb-radius-panel: 14px;
+  background:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 30px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 30px),
+    linear-gradient(135deg, #1e90ff 0%, #4a90e2 30%, #c0502e 70%, #ff4500 100%);
+  color: #fff;
+}
+/* 模糊球体底纹（左右下角装饰光斑） */
+body.page-newteams::before,
+body.page-newteams::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(70px);
+  pointer-events: none;
+}
+body.page-newteams::before { width: 420px; height: 420px; top: -120px; left: -100px; background: rgba(255,255,255,0.22); }
+body.page-newteams::after { width: 460px; height: 460px; bottom: -140px; right: -120px; background: rgba(255,122,26,0.3); }
+.page-newteams .zb-wrap { position: relative; z-index: 1; flex: 1; width: 100%; max-width: 1060px; margin: 0 auto; padding: 18px 14px 26px; }
+
+/* 顶部：授权标识 + 联赛标题 + 积分榜标牌 */
+.page-newteams .zb-topline { display: flex; align-items: center; gap: 14px; }
+.page-newteams .zb-auth {
+  flex: 0 0 auto;
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background: linear-gradient(180deg, #fff3c4 0%, var(--zb-gold) 45%, #ef9b00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 0 rgba(122,77,0,0.9)) drop-shadow(0 2px 3px rgba(0,0,0,0.5));
+}
+.page-newteams .zb-league {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+  font-size: clamp(1.05rem, 3vw, 1.85rem);
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+.page-newteams .zb-plate {
+  flex: 0 0 auto;
+  padding: 8px 18px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #fff;
+  background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: var(--zb-radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transform: translateY(4px); /* 原图标牌略低于标题 */
+}
+
+/* 最新战报比分栏：白底灰边胶囊，比分紧贴队名两侧 */
+.page-newteams .zb-score { margin-top: 16px; text-align: center; }
+.page-newteams .zb-score-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 100%;
+  padding: 10px 28px;
+  border-radius: var(--radius-pill);
+  background: #ffffff;
+  border: 1px solid #c3ccd6;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.28);
+}
+.page-newteams .zb-s-side { flex: 0 1 auto; display: flex; align-items: center; gap: 10px; min-width: 0; }
+.page-newteams .zb-s-name { font-size: 1.05rem; font-weight: 700; color: #1f2937; white-space: nowrap; }
+.page-newteams .zb-s-side img {
+  width: 34px; height: 34px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #eef1f5;
+  padding: 2px;
+}
+.page-newteams .zb-s-num { font-size: 2rem; font-weight: 900; color: #111827; font-variant-numeric: tabular-nums; }
+.page-newteams .zb-s-tag {
+  font-style: normal;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: #eef1f5;
+  color: #6b7280;
+}
+.page-newteams .zb-s-venue { margin-top: 8px; font-size: 0.75rem; color: rgba(255,255,255,0.85); }
+
+/* 双栏小组面板：GROUP C 蓝 / GROUP D 红 */
+.page-newteams .zb-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.page-newteams .msg { grid-column: 1 / -1; padding: 30px 10px; font-size: 0.85rem; color: rgba(255,255,255,0.75); }
+.page-newteams .msg.error {
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: var(--zb-radius);
+  line-height: 1.8;
+  color: #fff;
+}
+.page-newteams .zb-group { border-radius: var(--zb-radius-panel); padding: 14px 12px; color: #fff; box-shadow: 0 6px 18px rgba(0,0,0,0.3); }
+.page-newteams .zb-group.is-c { background: linear-gradient(165deg, #1d55b0 0%, #2e7de0 100%); }
+.page-newteams .zb-group.is-d { background: linear-gradient(165deg, #c03a2b 0%, #e0572f 100%); }
+.page-newteams .zb-g-title {
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* 行：左侧名称区（前 4 名橙底 / 5-7 名蓝底，右端圆形端帽）+ 右侧白底统计区（竖线分隔） */
+.page-newteams .zb-row {
+  display: flex;
+  align-items: stretch;
+  margin: 5px 0;
+  border-radius: var(--zb-radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  background: #ffffff; /* 行底为白：名称区右侧圆形边界外露处 */
+}
+.page-newteams a.zb-row { transition: filter .15s ease; }
+.page-newteams a.zb-row:hover { filter: brightness(1.12); }
+.page-newteams .zb-left {
+  flex: 0 1 auto; /* 宽度贴合内容，不占满整行 */
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-right: 10px;
+  padding: 7px 20px 7px 10px;
+  border-radius: 0 var(--radius-pill) var(--radius-pill) 0; /* 右端半圆端帽 */
+  background: linear-gradient(90deg, #2f74d8 0%, #4a90e2 100%);
+}
+.page-newteams .zb-row.is-played .zb-left { background: linear-gradient(90deg, #f45a1d 0%, #ff7a1a 100%); }
+/* 右侧白底统计区：三列黑字，竖线分隔，右对齐行尾（与表头标签对齐） */
+.page-newteams .zb-stats {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: stretch;
+  margin-left: auto;
+  background: #ffffff;
+}
+.page-newteams .zb-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border-left: 1px solid #dbe1e8;
+  color: #111827;
+  font-weight: 700;
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+}
+.page-newteams .zb-cell:first-child { border-left: none; }
+.page-newteams .zb-cell.wl { flex: 0 0 58px; }
+.page-newteams .zb-cell.net { flex: 0 0 60px; }
+.page-newteams .zb-cell.pts { flex: 0 0 52px; }
+
+/* 表头行：左侧留白与数据行对齐，标签列宽一致，下方浅色分隔线 */
+.page-newteams .zb-row.zb-head {
+  background: none;
+  margin: 0 0 4px;
+  border-radius: 0;
+  overflow: visible;
+  border-bottom: 1px solid rgba(255,255,255,0.28);
+}
+.page-newteams .zb-row.zb-head .zb-left { flex: 1 1 auto; padding: 2px 10px; margin-right: 0; background: none; border-radius: 0; }
+.page-newteams .zb-row.zb-head .zb-stats { background: none; }
+.page-newteams .zb-row.zb-head .zb-cell {
+  color: rgba(255,255,255,0.85);
+  border-left-color: transparent;
+  font-weight: 500;
+  font-size: 0.66rem;
+}
+/* 排名：纯数字（无背景、无边框）；积分：橙色圆形徽章 */
+.page-newteams .zb-rank {
+  flex: 0 0 auto;
+  min-width: 16px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+.page-newteams .zb-pts {
+  width: 26px; height: 26px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--zb-orange-light) 0%, var(--zb-orange) 100%);
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.28), 0 1px 3px rgba(0,0,0,0.3);
+}
+.page-newteams .zb-logo { width: 28px; height: 28px; object-fit: contain; border-radius: 50%; background: rgba(255,255,255,0.16); }
+.page-newteams .zb-name {
+  min-width: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 新闻滚动条（红底白字，双份内容无缝循环） */
+.page-newteams .zb-news {
+  display: flex;
+  align-items: stretch;
+  margin-top: 16px;
+  border-radius: var(--zb-radius);
+  overflow: hidden;
+  background: linear-gradient(90deg, var(--zb-red-deep), var(--zb-red));
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.28);
+}
+.page-newteams .zb-news-tag {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 9px 14px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  background: rgba(0,0,0,0.28);
+}
+.page-newteams .zb-news-view { flex: 1 1 auto; overflow: hidden; display: flex; align-items: center; }
+.page-newteams .zb-news-track { display: inline-flex; white-space: nowrap; animation: zb-news-run 30s linear infinite; font-size: 0.82rem; }
+.page-newteams .zb-news-seg { padding-right: 48px; }
+@keyframes zb-news-run { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .page-newteams .zb-news-track { animation: none; } }
+
+.page-newteams .footer { padding: 14px 16px 30px; font-size: 0.72rem; color: rgba(255,255,255,0.6); }
+
+@media (max-width: 700px) {
+  .page-newteams .zb-groups { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .page-newteams .zb-topline { flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .page-newteams .zb-league { order: 3; flex-basis: 100%; font-size: 1.05rem; }
+  .page-newteams .zb-plate { transform: none; }
+  .page-newteams .zb-score-row { gap: 8px; padding: 8px 16px; }
+  .page-newteams .zb-s-name { font-size: 0.9rem; }
+  .page-newteams .zb-s-num { font-size: 1.5rem; }
+  .page-newteams .zb-s-side { gap: 6px; }
+  .page-newteams .zb-s-side img { width: 26px; height: 26px; }
+  .page-newteams .zb-left { gap: 6px; margin-right: 6px; padding: 6px 16px 6px 8px; }
+  .page-newteams .zb-cell { padding: 0 6px; }
+  .page-newteams .zb-cell.wl { flex-basis: 46px; }
+  .page-newteams .zb-cell.net { flex-basis: 48px; }
+  .page-newteams .zb-cell.pts { flex-basis: 42px; }
+}
