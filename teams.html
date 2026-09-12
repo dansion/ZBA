@@ -22,7 +22,7 @@
   </div>
 
   <p class="footer">
-    数据更新 <code>2026-09-11</code> · 浙BA 2026 浙江省城市篮球联赛
+    数据更新 <code>2026-09-12</code> · 浙BA 2026 浙江省城市篮球联赛
   </p>
 
   <script src="data/data.js"></script>
@@ -122,13 +122,15 @@
               '<span class="rank' + (rank <= 4 ? ' top' : '') + '">' + rank + '</span>' +
               logo +
               '<span class="name">' + esc(s.名称) + '</span>' +
+              '<span class="wl">' + (s.场 === 0 ? '-' : s.胜 + '/' + s.负) + '</span>' +
+              '<span class="diff">' + (s.场 === 0 ? '-' : s.净胜) + '</span>' +
               '<span class="pts">' + (s.积分 === 0 ? '-' : s.积分) + '</span>' +
             '</a>';
           }).join('');
           return '<section class="card group">' +
             '<h2 class="group-title"><a href="schedule.html?group=' + encodeURIComponent(g) + '" title="查看 ' + g + ' 组全部赛程">' + g + '组</a></h2>' +
             '<div class="row head"><span class="rank">#</span><span class="logo"></span>' +
-              '<span class="name">球队</span><span class="pts">积分</span></div>' +
+              '<span class="name">球队</span><span class="wl">胜负</span><span class="diff">净胜分</span><span class="pts">积分</span></div>' +
             rows +
           '</section>';
         }).join('');
