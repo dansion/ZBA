@@ -6,6 +6,7 @@
   <title>浙BA 2026 · 小组积分榜</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="teams.css" />
 </head>
 <body class="page-teams">
   <header>
@@ -115,8 +116,7 @@
           var rows = ranked.map(function (s, idx) {
             var rank = idx + 1;
             var logo = s.logo
-              ? '<img class="logo" src="' + esc(s.logo) + '" alt="' + esc(s.名称) +
-                '" loading="lazy" onerror="this.style.visibility=\'hidden\'">'
+              ? '<span class="logo" data-logo="' + esc(String(s.logo).replace(/^.*\//, '').replace(/\.png$/, '')) + '" aria-label="' + esc(s.名称) + '"></span>'
               : '<span class="logo"></span>';
             return '<a class="row team' + (rank <= 4 ? ' qualify' : '') + (idx % 2 === 1 ? ' alt' : '') + '" href="schedule.html?team=' + encodeURIComponent(s.名称) + '" title="查看 ' + esc(s.名称) + ' 赛程">' +
               '<span class="rank' + (rank <= 4 ? ' top' : '') + '">' + rank + '</span>' +

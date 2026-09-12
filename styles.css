@@ -287,7 +287,7 @@ body.page-calendar { line-height: 1.6; }
 }
 .page-teams .rank.top { color: var(--on-accent); background: var(--accent); border-radius: var(--radius-md); }
 .page-teams .row.head .rank { color: var(--muted); background: none; }
-.page-teams .logo { flex: 0 0 26px; width: 26px; height: 26px; object-fit: contain; border-radius: var(--radius-logo); }
+.page-teams .logo { flex: 0 0 26px; width: 26px; height: 26px; border-radius: var(--radius-logo); }
 .page-teams .name {
   flex: 1 1 auto;
   min-width: 0;
@@ -353,7 +353,6 @@ body.page-calendar { line-height: 1.6; }
 .page-schedule .hlogo {
   flex: 0 0 auto;
   width: 26px; height: 26px;
-  object-fit: contain;
   border-radius: var(--radius-sm);
   background: rgba(255,255,255,0.12);
   padding: 2px;
@@ -396,7 +395,7 @@ body.page-calendar { line-height: 1.6; }
 .matches .side { flex: 1 1 0; min-width: 0; display: flex; align-items: center; gap: 8px; }
 .matches .side.home { justify-content: flex-start; }
 .matches .side.away { justify-content: flex-end; }
-.matches .mlogo { flex: 0 0 24px; width: 24px; height: 24px; object-fit: contain; border-radius: var(--radius-logo); }
+.matches .mlogo { flex: 0 0 24px; width: 24px; height: 24px; border-radius: var(--radius-logo); }
 .matches .mname {
   min-width: 0;
   font-size: 0.92rem;
@@ -708,7 +707,7 @@ body.page-newteams::after { width: 460px; height: 460px; bottom: -140px; right: 
   font-variant-numeric: tabular-nums;
   box-shadow: 0 0 0 2px rgba(255,255,255,0.28), 0 1px 3px rgba(0,0,0,0.3);
 }
-.page-newteams .zb-logo { width: 28px; height: 28px; object-fit: contain; border-radius: 50%; background: rgba(255,255,255,0.16); }
+.page-newteams .zb-logo { width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,0.16); }
 .page-newteams .zb-name {
   min-width: 0;
   font-size: 0.95rem;
@@ -859,7 +858,7 @@ body.page-newteams::after { width: 460px; height: 460px; bottom: -140px; right: 
 .page-finals .final .qmatch.done { border-color: var(--accent); }
 .page-finals .trow { display: flex; align-items: center; gap: 4px; min-width: 0; }
 .page-finals .trow .tname { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
-.page-finals .tlogo { flex: 0 0 16px; width: 16px; height: 16px; object-fit: contain; border-radius: var(--radius-logo); }
+.page-finals .tlogo { flex: 0 0 16px; width: 16px; height: 16px; border-radius: var(--radius-logo); }
 .page-finals .qmatch.done .trow:not(.win) { opacity: 0.5; }
 .page-finals .trow.win .tname { font-weight: 700; color: var(--accent); }
 .page-finals .trow.win .wmark { font-style: normal; font-weight: 700; color: var(--accent); }

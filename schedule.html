@@ -6,13 +6,14 @@
   <title>浙BA 2026 · 球队赛程</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="teams.css" />
 </head>
 <body class="page-schedule">
   <header>
     <div class="hbar">
       <a class="back" href="teams.html" title="返回积分榜">‹ 返回</a>
       <div class="htitle">
-        <img id="team-logo" class="hlogo" alt="" style="display:none" onerror="this.style.display='none'" />
+        <span id="team-logo" class="hlogo" aria-hidden="true" style="display:none"></span>
         <h1 id="team-title">球队赛程</h1>
       </div>
       <span id="team-count" class="hcount"></span>
@@ -43,10 +44,14 @@
         });
       }
 
+      // 队徽改用 CSS 背景渲染（teams.css 内嵌 base64）；键为 logos/ 文件名去扩展名（如 台州）
+      function logoKey(logo) {
+        return String(logo || '').replace(/^.*\//, '').replace(/\.png$/, '');
+      }
+
       function logoImg(t, name) {
         return (t && t.logo)
-          ? '<img class="mlogo" src="' + esc(t.logo) + '" alt="' + esc(name) +
-            '" loading="lazy" onerror="this.style.visibility=\'hidden\'">'
+          ? '<span class="mlogo" data-logo="' + esc(logoKey(t.logo)) + '" aria-label="' + esc(name) + '"></span>'
           : '<span class="mlogo"></span>';
       }
 
@@ -146,7 +151,7 @@
       // 设置页头
       document.title = teamName + ' · 赛程 | 浙BA 2026';
       titleEl.textContent = teamName;
-      if (team.logo) { logoEl.src = team.logo; logoEl.alt = teamName; logoEl.style.display = ''; }
+      if (team.logo) { logoEl.setAttribute('data-logo', logoKey(team.logo)); logoEl.style.display = ''; }
 
       var matches = scheduleData.filter(function (m) {
         return m['主场队'] === teamName || m['客场队'] === teamName;

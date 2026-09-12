@@ -6,6 +6,7 @@
   <title>浙BA 2026 · 首页</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="teams.css" />
 </head>
 <body class="page-index">
   <header>
@@ -62,10 +63,13 @@
           return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
         });
       }
+      // 队徽改用 CSS 背景渲染（teams.css 内嵌 base64）；键为 logos/ 文件名去扩展名（如 台州）
+      function logoKey(logo) {
+        return String(logo || '').replace(/^.*\//, '').replace(/\.png$/, '');
+      }
       function logoImg(t, name) {
         return (t && t.logo)
-          ? '<img class="mlogo" src="' + esc(t.logo) + '" alt="' + esc(name) +
-            '" loading="lazy" onerror="this.style.visibility=\'hidden\'">'
+          ? '<span class="mlogo" data-logo="' + esc(logoKey(t.logo)) + '" aria-label="' + esc(name) + '"></span>'
           : '<span class="mlogo"></span>';
       }
       // 按比赛时间升序（日期早的在前）；同一时刻以场序稳定排序
