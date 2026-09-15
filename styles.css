@@ -275,7 +275,7 @@ body.page-calendar { line-height: 1.6; }
 .page-teams .team.alt { background: var(--row-alt); }
 .page-teams .team.qualify { background: var(--qualify-bg); }
 .page-teams a.row { text-decoration: none; color: inherit; }
-.page-teams a.row.team { cursor: pointer; transition: background .15s ease; margin: 1px 0; }
+.page-teams a.row.team { cursor: pointer; transition: background .15s ease; margin: 2px 0; }
 .page-teams a.row.team:hover { background: var(--row-hover); }
 .page-teams .rank {
   flex: 0 0 20px;
@@ -287,7 +287,7 @@ body.page-calendar { line-height: 1.6; }
 }
 .page-teams .rank.top { color: var(--on-accent); background: var(--accent); border-radius: var(--radius-md); }
 .page-teams .row.head .rank { color: var(--muted); background: none; }
-.page-teams .logo { flex: 0 0 26px; width: 26px; height: 26px; border-radius: var(--radius-logo); }
+.page-teams .logo { flex: 0 0 24px; width: 24px; height: 24px; border-radius: var(--radius-logo); }
 .page-teams .name {
   flex: 1 1 auto;
   min-width: 0;
