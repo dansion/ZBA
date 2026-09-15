@@ -66,22 +66,38 @@
         return stats;
       }
 
-      // 同分集群内，仅统计集群球队之间的对局（相互胜负）
-      function headToHeadRank(cluster, schedule) {
-        var names = {};
-        cluster.forEach(function (t) { names[t.名称] = { 胜: 0 }; });
-        schedule.forEach(function (m) {
-          if (!played(m)) return;
-          var home = m['主场队'], away = m['客场队'];
-          if (!names[home] || !names[away]) return;
-          if (m['主队得分'] > m['客队得分']) names[home].胜++;
-          else if (m['客队得分'] > m['主队得分']) names[away].胜++;
-        });
+      // 同分集群内排名：相互胜负 → 全局净胜分 → 全局总得分
+      function rankCluster(cluster, schedule) {
+        // 仅当集群内所有队都相互交手过时才用 H2H 胜场
+        var n = cluster.length;
+        var allPlayed = true;
+        for (var x = 0; x < n && allPlayed; x++) {
+          for (var y = x + 1; y < n && allPlayed; y++) {
+            var found = schedule.some(function (m) {
+              if (!played(m)) return false;
+              return (m['主场队'] === cluster[x].名称 && m['客场队'] === cluster[y].名称) ||
+                     (m['主场队'] === cluster[y].名称 && m['客场队'] === cluster[x].名称);
+            });
+            if (!found) allPlayed = false;
+          }
+        }
+
         return cluster.slice().sort(function (a, b) {
-          var d = names[b.名称].胜 - names[a.名称].胜;   // 相互胜负
-          if (d !== 0) return d;
-          if (b.净胜 !== a.净胜) return b.净胜 - a.净胜; // 净胜分
-          if (b.得分 !== a.得分) return b.得分 - a.得分; // 总得分
+          if (allPlayed) {
+            var wins = {};
+            cluster.forEach(function (t) { wins[t.名称] = 0; });
+            schedule.forEach(function (m) {
+              if (!played(m)) return;
+              var home = m['主场队'], away = m['客场队'];
+              if (wins[home] == null || wins[away] == null) return;
+              if (m['主队得分'] > m['客队得分']) wins[home]++;
+              else if (m['客队得分'] > m['主队得分']) wins[away]++;
+            });
+            var d = wins[b.名称] - wins[a.名称];
+            if (d !== 0) return d;                       // 相互胜负
+          }
+          if (b.净胜 !== a.净胜) return b.净胜 - a.净胜; // 全局净胜分
+          if (b.得分 !== a.得分) return b.得分 - a.得分; // 全局总得分
           return a.原序 - b.原序;                        // 稳定兜底
         });
       }
@@ -97,7 +113,7 @@
           while (j + 1 < byPts.length && byPts[j + 1].积分 === byPts[i].积分) j++;
           var cluster = byPts.slice(i, j + 1);
           if (cluster.length === 1) out.push(cluster[0]);
-          else headToHeadRank(cluster, schedule).forEach(function (t) { out.push(t); });
+          else rankCluster(cluster, schedule).forEach(function (t) { out.push(t); });
           i = j + 1;
         }
         return out;
