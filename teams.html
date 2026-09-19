@@ -23,10 +23,24 @@
   </div>
 
   <p class="footer">
-    数据更新 <code>2026-09-19</code> · 浙BA 2026 浙江省城市篮球联赛
+    数据更新 <code id="data-date">2026-09-19</code> · 浙BA 2026 浙江省城市篮球联赛
   </p>
 
   <script src="data/data.js"></script>
+  <script>
+    // 页角「数据更新」日期取 data.js 中最新一个有比分的比赛日期
+    (function () {
+      var el = document.getElementById('data-date');
+      if (!el || typeof scheduleData === 'undefined') return;
+      var latest = '';
+      scheduleData.forEach(function (m) {
+        if (m['主队得分'] == null || m['客队得分'] == null) return;
+        var d = String(m['日期'] || '').slice(0, 10);
+        if (d > latest) latest = d;
+      });
+      if (latest) el.textContent = latest;
+    })();
+  </script>
   <script>
     (function () {
       var GROUP_ORDER = ['A', 'B', 'C', 'D'];
@@ -66,7 +80,7 @@
         return stats;
       }
 
-      // 同分集群内排名：相互胜负 → 全局净胜分 → 全局总得分
+      // 同分集群内排名：全局净胜分 → 相互胜负 → 全局总得分
       function rankCluster(cluster, schedule) {
         // 仅当集群内所有队都相互交手过时才用 H2H 胜场
         var n = cluster.length;
@@ -83,6 +97,7 @@
         }
 
         return cluster.slice().sort(function (a, b) {
+          if (b.净胜 !== a.净胜) return b.净胜 - a.净胜; // 全局净胜分
           if (allPlayed) {
             var wins = {};
             cluster.forEach(function (t) { wins[t.名称] = 0; });
@@ -96,13 +111,12 @@
             var d = wins[b.名称] - wins[a.名称];
             if (d !== 0) return d;                       // 相互胜负
           }
-          if (b.净胜 !== a.净胜) return b.净胜 - a.净胜; // 全局净胜分
           if (b.得分 !== a.得分) return b.得分 - a.得分; // 全局总得分
           return a.原序 - b.原序;                        // 稳定兜底
         });
       }
 
-      // 组内排名：积分 → 相互胜负 → 净胜分 → 总得分
+      // 组内排名：积分 → 净胜分 → 相互胜负 → 总得分
       function rankGroup(list, schedule) {
         var byPts = list.slice().sort(function (a, b) {
           return (b.积分 - a.积分) || (a.原序 - b.原序);

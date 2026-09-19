@@ -51,11 +51,25 @@
     </div>
   </div>
 
-  <p class="footer">数据更新 <code>2026-09-12</code> · 浙BA 2026 浙江省城市篮球联赛</p>
+  <p class="footer">数据更新 <code id="data-date">2026-09-12</code> · 浙BA 2026 浙江省城市篮球联赛</p>
 
   <div class="toast" id="toast">已开始下载 .ics 文件</div>
 
   <script src="data/data.js"></script>
+  <script>
+    // 页角「数据更新」日期取 data.js 中最新一个有比分的比赛日期
+    (function () {
+      var el = document.getElementById('data-date');
+      if (!el || typeof scheduleData === 'undefined') return;
+      var latest = '';
+      scheduleData.forEach(function (m) {
+        if (m['主队得分'] == null || m['客队得分'] == null) return;
+        var d = String(m['日期'] || '').slice(0, 10);
+        if (d > latest) latest = d;
+      });
+      if (latest) el.textContent = latest;
+    })();
+  </script>
   <script>
     (function () {
       // 顶部统计数字改为数据驱动（数据来自 data/data.js；加载失败则保留默认值）

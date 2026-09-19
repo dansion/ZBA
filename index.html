@@ -49,10 +49,24 @@
   </div>
 
   <p class="footer">
-    数据更新 <code>2026-09-19</code> · 浙BA 2026 浙江省城市篮球联赛
+    数据更新 <code id="data-date">2026-09-19</code> · 浙BA 2026 浙江省城市篮球联赛
   </p>
 
   <script src="data/data.js"></script>
+  <script>
+    // 页角「数据更新」日期取 data.js 中最新一个有比分的比赛日期
+    (function () {
+      var el = document.getElementById('data-date');
+      if (!el || typeof scheduleData === 'undefined') return;
+      var latest = '';
+      scheduleData.forEach(function (m) {
+        if (m['主队得分'] == null || m['客队得分'] == null) return;
+        var d = String(m['日期'] || '').slice(0, 10);
+        if (d > latest) latest = d;
+      });
+      if (latest) el.textContent = latest;
+    })();
+  </script>
   <script>
     (function () {
       var todayList = document.getElementById('today-list');
