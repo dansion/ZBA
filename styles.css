@@ -462,6 +462,22 @@ body.page-calendar { line-height: 1.6; }
 }
 .page-index .sec-title .date { font-size: 0.75rem; font-weight: 500; color: var(--muted); white-space: nowrap; }
 
+/* 可折叠标题：点击标题收起 / 展开该卡片的赛程列表 */
+.page-index .sec-title { cursor: pointer; -webkit-user-select: none; user-select: none; }
+.page-index .sec-title > span:first-child { flex: 1 1 auto; }
+.page-index .sec-title:hover { background: var(--row-alt); }
+.page-index .sec-title .caret {
+  flex: 0 0 auto;
+  width: 8px; height: 8px;
+  align-self: center;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: rotate(45deg);            /* 展开：箭头朝下 */
+  transition: transform .15s ease;
+}
+.page-index .day-card.collapsed .sec-title .caret { transform: rotate(-45deg); } /* 收起：箭头朝右 */
+.page-index .day-card.collapsed .matches { display: none; }
+
 /* 当日赛程卡片（今天 / 明天共用） */
 .page-index .day-card { overflow: hidden; margin-bottom: 14px; }
 .page-index .day-card .msg { padding: 30px 14px; font-size: 0.85rem; line-height: 1.9; }

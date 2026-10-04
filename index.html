@@ -16,17 +16,24 @@
   </header>
 
   <div class="wrap">
-    <!-- 1. 今天 / 明天赛程：行样式与 schedule.html 一致（共用 .matches） -->
-    <section class="card day-card">
-      <div class="sec-title">今天赛程 <span class="date" id="today-date"></span></div>
-      <div class="matches" id="today-list">
-        <div class="msg">正在加载今天赛程…</div>
+    <!-- 首页赛程：按「比赛日」动态展示 前序赛程 / 即将开赛 / (明天)后续赛程 -->
+    <section class="card day-card" id="prev-card">
+      <div class="sec-title" role="button" tabindex="0" aria-controls="prev-list"><span id="prev-title">前序赛程</span> <span class="date" id="prev-date"></span><span class="caret" aria-hidden="true"></span></div>
+      <div class="matches" id="prev-list">
+        <div class="msg">正在加载前序赛程…</div>
       </div>
     </section>
 
-    <section class="card day-card">
-      <div class="sec-title">明天赛程 <span class="date" id="tomorrow-date"></span></div>
-      <div class="matches" id="tomorrow-list">
+    <section class="card day-card" id="upcoming-card">
+      <div class="sec-title" role="button" tabindex="0" aria-controls="upcoming-list"><span id="upcoming-title">即将开赛</span> <span class="date" id="upcoming-date"></span><span class="caret" aria-hidden="true"></span></div>
+      <div class="matches" id="upcoming-list">
+        <div class="msg">正在加载即将开赛…</div>
+      </div>
+    </section>
+
+    <section class="card day-card" id="next-card">
+      <div class="sec-title" role="button" tabindex="0" aria-controls="next-list"><span id="next-title">明天赛程</span> <span class="date" id="next-date"></span><span class="caret" aria-hidden="true"></span></div>
+      <div class="matches" id="next-list">
         <div class="msg">正在加载明天赛程…</div>
       </div>
     </section>
@@ -69,9 +76,6 @@
   </script>
   <script>
     (function () {
-      var todayList = document.getElementById('today-list');
-      var tomorrowList = document.getElementById('tomorrow-list');
-
       function esc(s) {
         return String(s).replace(/[&<>"]/g, function (c) {
           return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
@@ -96,8 +100,9 @@
 
       if (typeof teamsData === 'undefined' || typeof scheduleData === 'undefined') {
         var errHtml = '<div class="msg error">数据加载失败：请确认 <code>data/data.js</code> 与本页面一并存在。</div>';
-        todayList.innerHTML = errHtml;
-        tomorrowList.innerHTML = errHtml;
+        ['prev-list', 'upcoming-list', 'next-list'].forEach(function (id) {
+          var el = document.getElementById(id); if (el) el.innerHTML = errHtml;
+        });
         return;
       }
 
@@ -138,29 +143,123 @@
         }).join('');
       }
 
-      // 填充某天的赛程：offset=0 今天、1 明天
+      // ---- 按「比赛日」动态计算 前序 / 即将开赛 / 明天 ----
       var WD = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
-      function fillDay(listEl, dateEl, offset, emptyMsg) {
-        var d = new Date();
-        d.setDate(d.getDate() + offset);
-        var mm = String(d.getMonth() + 1); if (mm.length < 2) mm = '0' + mm;
-        var dd = String(d.getDate()); if (dd.length < 2) dd = '0' + dd;
-        var ymd = d.getFullYear() + '-' + mm + '-' + dd;
-        dateEl.textContent = ymd + ' ' + WD[d.getDay()];
 
-        var matches = scheduleData.filter(function (m) {
-          return String(m['日期'] || '').split(' ')[0] === ymd;
-        }).sort(byTime);
-
-        listEl.innerHTML = matches.length
-          ? renderMatches(matches)
-          : '<div class="msg">' + emptyMsg + '</div>';
+      function pad(n) { return n < 10 ? '0' + n : '' + n; }
+      function fmt(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+      function addDays(base, n) { var d = new Date(base); d.setDate(d.getDate() + n); return d; }
+      function dayOf(m) { return String(m['日期'] || '').split(' ')[0]; }
+      function weekOfYmd(ymd) {
+        var p = ymd.split('-');
+        var d = new Date(+p[0], +p[1] - 1, +p[2]);
+        return WD[d.getDay()];
       }
 
-      fillDay(todayList, document.getElementById('today-date'), 0,
-        '今天没有比赛。<br>可从 <a href="teams.html">小组积分榜</a> 查看各队完整赛程。');
-      fillDay(tomorrowList, document.getElementById('tomorrow-date'), 1,
-        '明天没有比赛。');
+      var now = new Date();
+      var todayStr = fmt(now);
+      var tomorrowStr = fmt(addDays(now, 1));
+      var yesterdayStr = fmt(addDays(now, -1));
+      var dbyStr = fmt(addDays(now, -2));
+
+      // 是否已赛（有比分即已赛）；同一比赛日要么全赛要么未赛，不存在跨时段
+      function isPlayed(m) { return m['主队得分'] != null && m['客队得分'] != null; }
+      function matchesOn(day) {
+        if (!day) return [];
+        return scheduleData.filter(function (m) { return dayOf(m) === day; }).sort(byTime);
+      }
+      function dayPlayed(day) {
+        var ms = matchesOn(day);
+        return ms.length > 0 && ms.every(function (m) { return isPlayed(m); });
+      }
+
+      // 收集全部比赛日并升序（yyyy-mm-dd 定宽，字典序即时间序）
+      var daySet = {};
+      scheduleData.forEach(function (m) { var d = dayOf(m); if (d) daySet[d] = true; });
+      var allDays = Object.keys(daySet).sort();
+
+      // 即将开赛 = 今天或之后、最早的「未赛」比赛日；若全部已赛则无即将开赛
+      var upcomingDay = null, prevDay = null, nextDay = null;
+      for (var i = 0; i < allDays.length; i++) {
+        if (allDays[i] >= todayStr && !dayPlayed(allDays[i])) { upcomingDay = allDays[i]; break; }
+      }
+      // 前序赛程 = 即将开赛之前最近的「已出比分」比赛日（今天若已赛，则今天归入前序）
+      var prevBound = upcomingDay || '9999-12-31';
+      for (var j = allDays.length - 1; j >= 0; j--) {
+        if (allDays[j] < prevBound && dayPlayed(allDays[j])) { prevDay = allDays[j]; break; }
+      }
+      // 明天预览 = 即将开赛之后的下一个比赛日
+      if (upcomingDay) {
+        for (var k = 0; k < allDays.length; k++) {
+          if (allDays[k] > upcomingDay) { nextDay = allDays[k]; break; }
+        }
+      }
+
+      // 相对今天的口语标签；更早或更晚则回退到具体日期
+      function relLabel(day) {
+        if (day === todayStr) return '今天';
+        if (day === tomorrowStr) return '明天';
+        if (day === yesterdayStr) return '昨天';
+        if (day === dbyStr) return '前天';
+        return day;
+      }
+
+      // 折叠状态：.collapsed 类控制 .matches 显隐，并同步 aria-expanded
+      function setCollapsed(card, collapsed) {
+        card.classList.toggle('collapsed', !!collapsed);
+        var title = card.querySelector('.sec-title');
+        if (title) title.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+      }
+
+      // 点击 / 键盘（Enter、空格）标题部分收起或展开对应卡片
+      Array.prototype.forEach.call(
+        document.querySelectorAll('.page-index .day-card .sec-title'),
+        function (title) {
+          function toggle() {
+            var card = title.closest('.day-card');
+            if (card) setCollapsed(card, !card.classList.contains('collapsed'));
+          }
+          title.addEventListener('click', toggle);
+          title.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+              e.preventDefault(); toggle();
+            }
+          });
+        }
+      );
+
+      // collapsed 参数：该板块展示时的默认收起状态（false = 展开）
+      function fillSection(cardId, titleId, dateId, listId, baseLabel, day, emptyMsg, collapsed) {
+        var card = document.getElementById(cardId);
+        if (!day) { card.style.display = 'none'; return; }
+        card.style.display = '';
+        document.getElementById(titleId).textContent = baseLabel + '（' + relLabel(day) + '）';
+        document.getElementById(dateId).textContent = day + ' ' + weekOfYmd(day);
+        var matches = matchesOn(day);
+        document.getElementById(listId).innerHTML = matches.length
+          ? renderMatches(matches)
+          : '<div class="msg">' + emptyMsg + '</div>';
+        setCollapsed(card, collapsed);
+      }
+
+      // 1. 前序赛程（即将开赛之前最近的已出比分比赛日；今天已赛则今天归此）——默认展开
+      fillSection('prev-card', 'prev-title', 'prev-date', 'prev-list',
+        '前序赛程', prevDay, '暂无已赛比赛。', false);
+
+      // 2. 即将开赛（今天或之后最近的未赛比赛日；全部已赛则隐藏）——默认展开
+      fillSection('upcoming-card', 'upcoming-title', 'upcoming-date', 'upcoming-list',
+        '即将开赛', upcomingDay, '本赛季比赛已全部结束。', false);
+
+      // 3. 明天/后续赛程：仅当「即将开赛」落在今天（即连续两个比赛日都有比赛）时显示，
+      //    且默认收起；否则隐藏整个板块
+      var nextCard = document.getElementById('next-card');
+      if (upcomingDay === todayStr && nextDay) {
+        var baseNext = (nextDay === tomorrowStr) ? '明天赛程' : '后续赛程';
+        fillSection('next-card', 'next-title', 'next-date', 'next-list',
+          baseNext, nextDay, '该日没有比赛。', true);
+      } else {
+        nextCard.style.display = 'none';
+      }
     })();
   </script>
 </body>
