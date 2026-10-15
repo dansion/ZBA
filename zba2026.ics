@@ -995,13 +995,13 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:zba2026-g067@zba.local
-SUMMARY:瑞安队 VS 绍兴队（B组第6轮）
+SUMMARY:绍兴队 VS 瑞安队 [71:66]
 DTSTART;TZID=Asia/Shanghai:20261015T193000
 DTEND;TZID=Asia/Shanghai:20261015T213000
-LOCATION:瑞安市体育中心体育馆
+LOCATION:绍兴市奥体中心体育馆
 DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
- 序：67　轮次：第6轮\n组别：B组\n对阵：瑞安队 VS 绍兴
- 队\n时间：2026-10-15（周四）19:30\n场馆：瑞安市体育中心
+ 序：67　轮次：第6轮\n组别：B组\n对阵：绍兴队 VS 瑞安
+ 队\n时间：2026-10-15（周四）19:30\n场馆：绍兴市奥体体育中心
  体育馆
  \n积分榜 https://zba.dansion.com/teams.html
 CATEGORIES:浙BA,B组
@@ -2276,13 +2276,13 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:zba2026-g154@zba.local
-SUMMARY:绍兴队 VS 瑞安队（B组第13轮）
+SUMMARY:瑞安队 VS 绍兴队（B组第13轮）
 DTSTART;TZID=Asia/Shanghai:20261128T193000
 DTEND;TZID=Asia/Shanghai:20261128T213000
-LOCATION:绍兴市奥体中心体育馆
+LOCATION:瑞安中心体育馆
 DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
- 序：154　轮次：第13轮\n组别：B组\n对阵：绍兴队 VS 瑞安
- 队\n时间：2026-11-28（周六）19:30\n场馆：绍兴市奥体中心
+ 序：154　轮次：第13轮\n组别：B组\n对阵：瑞安队 VS 绍兴队
+ \n时间：2026-11-28（周六）19:30\n场馆：瑞安体育中心
  体育馆
  \n积分榜 https://zba.dansion.com/teams.html
 CATEGORIES:浙BA,B组
