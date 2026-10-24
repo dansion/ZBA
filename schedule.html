@@ -162,14 +162,34 @@
         return;
       }
 
-      // 设置页头
-      document.title = teamName + ' · 赛程 | 浙BA 2026';
-      titleEl.textContent = teamName;
-      if (team.logo) { logoEl.setAttribute('data-logo', logoKey(team.logo)); logoEl.style.display = ''; }
-
       var matches = scheduleData.filter(function (m) {
         return m['主场队'] === teamName || m['客场队'] === teamName;
       }).sort(byTime);
+
+      // 场均得失分：只统计已有比分的场次，得分取本队比分、失分取对手比分
+      function avgPoints(list, name) {
+        var sum = 0, lost = 0, n = 0;
+        list.forEach(function (m) {
+          if (m['主队得分'] == null || m['客队得分'] == null) return;
+          var isHome = m['主场队'] === name;
+          sum += isHome ? m['主队得分'] : m['客队得分'];
+          lost += isHome ? m['客队得分'] : m['主队得分'];
+          n++;
+        });
+        return n ? { 场: n, 均得: sum / n, 均失: lost / n } : null;
+      }
+
+      function fmtAvg(v) {
+        return (Math.round(v * 10) / 10).toFixed(1);
+      }
+
+      // 设置页头：队名后附场均得失分，该队尚无已赛场次时不显示
+      var avg = avgPoints(matches, teamName);
+      document.title = teamName + ' · 赛程 | 浙BA 2026';
+      titleEl.innerHTML = esc(teamName) + (avg
+        ? '<span class="havg">（场均得分' + fmtAvg(avg.均得) + ' 场均失分' + fmtAvg(avg.均失) + '）</span>'
+        : '');
+      if (team.logo) { logoEl.setAttribute('data-logo', logoKey(team.logo)); logoEl.style.display = ''; }
 
       countEl.textContent = (team['组别'] ? team['组别'] + '组 · ' : '') + '共 ' + matches.length + ' 场';
 

@@ -1207,7 +1207,7 @@ DTEND;TZID=Asia/Shanghai:20261024T213000
 LOCATION:玉环市体育中心体育馆
 DESCRIPTION:2026浙江省城市篮球联赛·省级争霸赛小组赛\n场
  序：81　轮次：第7轮\n组别：C组\n对阵：玉环队 VS 衢州
- 队\n时间：2026-10-24（周六）19:30\n场馆：玉环市体育中心
+ 队\n时间：2026-10-25（周日）19:30\n场馆：玉环市体育中心
  体育馆
  \n积分榜 https://zba.dansion.com/teams.html
 CATEGORIES:浙BA,C组
@@ -1216,7 +1216,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:zba2026-g082@zba.local
-SUMMARY:永康队 VS 临海队（B组第7轮）
+SUMMARY:永康队 VS 临海队 [78:84]
 DTSTART;TZID=Asia/Shanghai:20261024T193000
 DTEND;TZID=Asia/Shanghai:20261024T213000
 LOCATION:永康市体育中心体育馆
