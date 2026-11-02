@@ -80,9 +80,9 @@
         return stats;
       }
 
-      // 同分集群内排名：相互胜负 → 全局净胜分 → 全局总得分
+      // 同分集群内排名：相互净胜分 → 相互总得分 → 全局净胜分 → 全局总得分
       function rankCluster(cluster, schedule) {
-        // 仅当集群内所有队都相互交手过时才用 H2H 胜场
+        // 仅当集群内每对球队都交手过时，才用集群内（小联赛）数据排序
         var n = cluster.length;
         var allPlayed = true;
         for (var x = 0; x < n && allPlayed; x++) {
@@ -96,19 +96,26 @@
           }
         }
 
+        // 预计算集群内相互交手数据（小联赛净胜分与总得分），每队标量键，保证排序传递性
+        var h2hNet = {}, h2hPts = {};
+        if (allPlayed) {
+          cluster.forEach(function (t) { h2hNet[t.名称] = 0; h2hPts[t.名称] = 0; });
+          schedule.forEach(function (m) {
+            if (!played(m)) return;
+            var home = m['主场队'], away = m['客场队'];
+            if (h2hNet[home] == null || h2hNet[away] == null) return;
+            var hs = m['主队得分'], as = m['客队得分'];
+            h2hNet[home] += hs - as; h2hNet[away] += as - hs;
+            h2hPts[home] += hs; h2hPts[away] += as;
+          });
+        }
+
         return cluster.slice().sort(function (a, b) {
           if (allPlayed) {
-            var wins = {};
-            cluster.forEach(function (t) { wins[t.名称] = 0; });
-            schedule.forEach(function (m) {
-              if (!played(m)) return;
-              var home = m['主场队'], away = m['客场队'];
-              if (wins[home] == null || wins[away] == null) return;
-              if (m['主队得分'] > m['客队得分']) wins[home]++;
-              else if (m['客队得分'] > m['主队得分']) wins[away]++;
-            });
-            var d = wins[b.名称] - wins[a.名称];
-            if (d !== 0) return d;                       // 相互胜负
+            var dn = h2hNet[b.名称] - h2hNet[a.名称];
+            if (dn !== 0) return dn;                   // 相互净胜分
+            var dp = h2hPts[b.名称] - h2hPts[a.名称];
+            if (dp !== 0) return dp;                   // 相互总得分
           }
           if (b.净胜 !== a.净胜) return b.净胜 - a.净胜; // 全局净胜分
           if (b.得分 !== a.得分) return b.得分 - a.得分; // 全局总得分
@@ -116,7 +123,7 @@
         });
       }
 
-      // 组内排名：积分 → 相互胜负 → 净胜分 → 总得分
+      // 组内排名：积分 → 相互净胜分 → 相互总得分 → 全局净胜分 → 全局总得分
       function rankGroup(list, schedule) {
         var byPts = list.slice().sort(function (a, b) {
           return (b.积分 - a.积分) || (a.原序 - b.原序);
